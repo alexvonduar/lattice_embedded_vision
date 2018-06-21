@@ -1,0 +1,285 @@
+synthesis:  version Diamond (64-bit) 3.8.0.64.0
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+Thu Jun 30 10:30:09 2016
+
+
+Command Line:  C:\lscc\diamond\3.8_x64\ispfpga\bin\nt64\synthesis.exe -f cross_domain_fifo.synproj -sdc C:/Users/dchitti1/Desktop/from robin/DPHY_to_CMOS_Camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.ldc -gui 
+
+Synthesis options:
+The -a option is lifmd.
+The -s option is 6.
+The -t option is CSFBGA81.
+The -d option is LIF-MD6000.
+Using package CSFBGA81.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : LIFMD
+
+### Device  : LIF-MD6000
+
+### Package : CSFBGA81
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+Optimization goal = Balanced
+Top-level module name = cross_domain_fifo.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true (default)
+DSP utilization = 100 % (default)
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Use IO Insertion = FALSE
+Use IO Reg = FALSE (implied)
+WARNING - synthesis: Cannot pack registers into I/Os because use_io_insertion is FALSE.
+WARNING - synthesis: Ignoring user setting of use_io_reg. Value is set to FALSE.
+Use IO Reg = FALSE
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+WARNING - synthesis: Searchpath C:/Users/dchitti1/Desktop/from not found.
+WARNING - synthesis: Searchpath robin/DPHY_to_CMOS_Camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo not found.
+Verilog design file = C:/lscc/diamond/3.8_x64/cae_library/synthesis/verilog/lifmd.v
+Verilog design file = C:/lscc/diamond/3.8_x64/cae_library/synthesis/verilog/pmi_def.v
+Verilog design file = C:/Users/dchitti1/Desktop/from robin/DPHY_to_CMOS_Camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v
+NGO file = C:/Users/dchitti1/Desktop/from robin/DPHY_to_CMOS_Camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.ngo
+WARNING - synthesis: Option -force_gsr will be set to false when option -output_edif/-ngo are set
+-sdc option: SDC file input is C:/Users/dchitti1/Desktop/from robin/DPHY_to_CMOS_Camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.ldc.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Analyzing Verilog file C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/lscc/diamond/3.8_x64/cae_library/synthesis/verilog/lifmd.v. VERI-1482
+Analyzing Verilog file c:/lscc/diamond/3.8_x64/cae_library/synthesis/verilog/pmi_def.v. VERI-1482
+Analyzing Verilog file c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v. VERI-1482
+Top module name (Verilog): cross_domain_fifo
+INFO - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(8): compiling module cross_domain_fifo. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(25): compiling module AND2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(357): compiling module INV. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(646): compiling module OR2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(800): compiling module XOR2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(700): compiling module ROM16X1A(initval=16'b0110100110010110). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(700): compiling module ROM16X1A(initval=16'b010000010000). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(700): compiling module ROM16X1A(initval=16'b01000000000100). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(700): compiling module ROM16X1A(initval=16'b0101000000). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(700): compiling module ROM16X1A(initval=16'b0100000000000001). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(700): compiling module ROM16X1A(initval=16'b01001111001000). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(700): compiling module ROM16X1A(initval=16'b010000000000100). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(700): compiling module ROM16X1A(initval=16'b0100010001010000). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(700): compiling module ROM16X1A(initval=16'b0100110000110010). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(700): compiling module ROM16X1A(initval=16'b1000000000000001). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(1100): compiling module PDPW8KE(CSDECODE_W="0b001",RESETMODE="ASYNC"). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(104): compiling module FD1P3BX. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(113): compiling module FD1P3DX. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(162): compiling module FD1S3DX. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(154): compiling module FD1S3BX. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(70): compiling module CCU2C(INIT0=16'b0110011010101010,INIT1=16'b0110011010101010,INJECT1_0="NO",INJECT1_1="NO"). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(70): compiling module CCU2C(INIT0=16'b1001100110101010,INIT1=16'b1001100110101010,INJECT1_0="NO",INJECT1_1="NO"). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(747): compiling module VHI. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v(751): compiling module VLO. VERI-1018
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(1043): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(1091): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(1139): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(1195): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(1251): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(1303): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(1359): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(1411): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(1467): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(1519): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(1575): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(1627): input port CIN is not connected on this instance. VDB-1013
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/sn5w00/data/sn5wlib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sn5w6000.nph' in environment: C:/lscc/diamond/3.8_x64/ispfpga.
+Package Status:                     Advanced       Version 1.42.
+WARNING - synthesis: There are no design constraints in the file C:/Users/dchitti1/Desktop/from robin/DPHY_to_CMOS_Camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.ldc
+Top-level module name = cross_domain_fifo.
+WARNING - synthesis: Couldn't bind cell OFE1P3BX to technology library
+WARNING - synthesis: Couldn't bind cell OFE1P3DX to technology library
+WARNING - synthesis: Couldn't bind cell OFE1P3IX to technology library
+WARNING - synthesis: Couldn't bind cell OFE1P3JX to technology library
+WARNING - synthesis: Couldn't bind cell ROM16X1 to technology library
+WARNING - synthesis: Couldn't bind cell ROM32X1 to technology library
+WARNING - synthesis: Couldn't bind cell ROM64X1 to technology library
+WARNING - synthesis: Couldn't bind cell ROM128X1 to technology library
+WARNING - synthesis: Couldn't bind cell ROM256X1 to technology library
+WARNING - synthesis: There are no design constraints in the file C:/Users/dchitti1/Desktop/from robin/DPHY_to_CMOS_Camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.ldc
+This ldc file was generated by Clarity Designer!
+
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(341): Removing unused instance _6. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(343): Removing unused instance _7. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(345): Removing unused instance _8. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(347): Removing unused instance _9. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(349): Removing unused instance _10. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(351): Removing unused instance _11. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(353): Removing unused instance _12. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(355): Removing unused instance _13. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(357): Removing unused instance _14. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(359): Removing unused instance _15. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(361): Removing unused instance _16. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(363): Removing unused instance _17. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(365): Removing unused instance _18. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(367): Removing unused instance _19. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(369): Removing unused instance _20. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(371): Removing unused instance _21. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(373): Removing unused instance _22. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(375): Removing unused instance _23. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(377): Removing unused instance _24. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(379): Removing unused instance _25. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(381): Removing unused instance _26. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(535): Removing unused instance _27. VDB-5034
+WARNING - synthesis: c:/users/dchitti1/desktop/from robin/dphy_to_cmos_camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.v(563): Removing unused instance _28. VDB-5034
+######## Missing driver on net n458. Patching with GND.
+######## Missing driver on net n457. Patching with GND.
+######## Missing driver on net n459. Patching with GND.
+######## Missing driver on net n460. Patching with GND.
+######## Missing driver on net n461. Patching with GND.
+######## Missing driver on net n462. Patching with GND.
+######## Missing driver on net n463. Patching with GND.
+######## Missing driver on net n464. Patching with GND.
+######## Missing driver on net n465. Patching with GND.
+######## Missing driver on net n466. Patching with GND.
+######## Missing driver on net n467. Patching with GND.
+######## Missing driver on net n468. Patching with GND.
+
+
+
+Duplicate register/latch removal. FF_112 is a one-to-one match with FF_103.
+Duplicate register/latch removal. FF_85 is a one-to-one match with FF_76.
+Duplicate register/latch removal. FF_112 is a one-to-one match with FF_103.
+Duplicate register/latch removal. FF_85 is a one-to-one match with FF_76.
+Duplicate register/latch removal. FF_112 is a one-to-one match with FF_103.
+Duplicate register/latch removal. FF_85 is a one-to-one match with FF_76.
+Duplicate register/latch removal. FF_112 is a one-to-one match with FF_103.
+Duplicate register/latch removal. FF_85 is a one-to-one match with FF_76.
+Duplicate register/latch removal. FF_112 is a one-to-one match with FF_103.
+Duplicate register/latch removal. FF_85 is a one-to-one match with FF_76.
+Duplicate register/latch removal. FF_112 is a one-to-one match with FF_103.
+Duplicate register/latch removal. FF_85 is a one-to-one match with FF_76.
+Duplicate register/latch removal. FF_112 is a one-to-one match with FF_103.
+Duplicate register/latch removal. FF_85 is a one-to-one match with FF_76.
+Duplicate register/latch removal. FF_112 is a one-to-one match with FF_103.
+Duplicate register/latch removal. FF_85 is a one-to-one match with FF_76.
+Duplicate register/latch removal. FF_112 is a one-to-one match with FF_103.
+Duplicate register/latch removal. FF_85 is a one-to-one match with FF_76.
+Duplicate register/latch removal. FF_112 is a one-to-one match with FF_103.
+Duplicate register/latch removal. FF_85 is a one-to-one match with FF_76.
+Duplicate register/latch removal. FF_112 is a one-to-one match with FF_103.
+Duplicate register/latch removal. FF_85 is a one-to-one match with FF_76.
+######## GSR will not be inferred in an NGO flow, unless force_gsr=yes.
+Duplicate register/latch removal. FF_112 is a one-to-one match with FF_103.
+Duplicate register/latch removal. FF_85 is a one-to-one match with FF_76.
+Duplicate register/latch removal. FF_112 is a one-to-one match with FF_103.
+Duplicate register/latch removal. FF_85 is a one-to-one match with FF_76.
+Duplicate register/latch removal. FF_112 is a one-to-one match with FF_103.
+Duplicate register/latch removal. FF_85 is a one-to-one match with FF_76.
+Duplicate register/latch removal. FF_112 is a one-to-one match with FF_103.
+Duplicate register/latch removal. FF_85 is a one-to-one match with FF_76.
+Duplicate register/latch removal. FF_112 is a one-to-one match with FF_103.
+Duplicate register/latch removal. FF_85 is a one-to-one match with FF_76.
+Duplicate register/latch removal. FF_112 is a one-to-one match with FF_103.
+Duplicate register/latch removal. FF_85 is a one-to-one match with FF_76.
+Duplicate register/latch removal. FF_112 is a one-to-one match with FF_103.
+Duplicate register/latch removal. FF_85 is a one-to-one match with FF_76.
+Duplicate register/latch removal. FF_112 is a one-to-one match with FF_103.
+Duplicate register/latch removal. FF_85 is a one-to-one match with FF_76.
+Duplicate register/latch removal. FF_112 is a one-to-one match with FF_103.
+Duplicate register/latch removal. FF_85 is a one-to-one match with FF_76.
+WARNING - synthesis: There are no design constraints in the file cross_domain_fifo_for_lpf.sdc
+Writing LPF file C:/Users/dchitti1/Desktop/from robin/DPHY_to_CMOS_Camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.lpf.
+Results of NGD DRC are available in cross_domain_fifo_drc.log.
+WARNING - synthesis: DRC checking was skipped because the -ngo option was used.
+Writing NGD file C:/Users/dchitti1/Desktop/from robin/DPHY_to_CMOS_Camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.ngo.
+
+################### Begin Area Report (cross_domain_fifo)######################
+Number of register bits => 130 of 6047 (2 % )
+AND2 => 2
+CCU2C => 78
+FD1P3BX => 20
+FD1P3DX => 70
+FD1S3BX => 2
+FD1S3DX => 38
+GSR => 1
+INV => 2
+OR2 => 1
+PDPW8KE => 2
+ROM16X1A => 32
+XOR2 => 16
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 0
+Clock Enable Nets
+Number of Clock Enables: 2
+Top 2 highest fanout Clock Enables:
+  Net : rden_i, loads : 55
+  Net : wren_i, loads : 53
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : rRst, loads : 65
+  Net : rden_i, loads : 55
+  Net : wren_i, loads : 53
+  Net : wcount_8, loads : 10
+  Net : rcount_8, loads : 10
+  Net : w_gcount_r28, loads : 9
+  Net : r_gcount_w28, loads : 9
+  Net : wptr_8, loads : 6
+  Net : rptr_8, loads : 6
+  Net : w_g2b_xor_cluster_0, loads : 6
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk501 [get_nets WrClock]               |  200.000 MHz|  158.328 MHz|    10 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk500 [get_nets RdClock]               |  200.000 MHz|  158.328 MHz|    10 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+
+Peak Memory Usage: 57.305  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.468  secs
+--------------------------------------------------------------

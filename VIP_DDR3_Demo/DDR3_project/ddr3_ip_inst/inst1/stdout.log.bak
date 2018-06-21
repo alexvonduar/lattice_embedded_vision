@@ -1,0 +1,65 @@
+Running in Lattice mode
+
+
+Starting:    C:\lscc\diamond\3.8_x64\synpbase\bin64\mbin\synbatch.exe
+Install:     C:\lscc\diamond\3.8_x64\synpbase
+Hostname:    L27757
+Date:        Wed Jun 28 15:18:45 2017
+Version:     L-2016.03L-1
+
+Arguments:   -product synplify_pro -batch C:/Users/hreddy/Desktop/VIP_DDR3_Demo/DDR3_project/ddr3_ip_inst/inst1/syn_results/ddr_clks_inst1.prj
+ProductType: synplify_pro
+
+
+
+
+
+log file: "C:\Users\hreddy\Desktop\VIP_DDR3_Demo\DDR3_project\ddr3_ip_inst\inst1\syn_results\ddr_clks_inst1.srr"
+Running: syn_results in foreground
+
+Running ddr_clks_inst1|syn_results
+
+Running: compile (Compile) on ddr_clks_inst1|syn_results
+
+Running: compile_flow (Compile Process) on ddr_clks_inst1|syn_results
+
+Running: compiler (Compile Input) on ddr_clks_inst1|syn_results
+Copied C:\Users\hreddy\Desktop\VIP_DDR3_Demo\DDR3_project\ddr3_ip_inst\inst1\syn_results\synwork\ddr_clks_inst1_comp.srs to C:\Users\hreddy\Desktop\VIP_DDR3_Demo\DDR3_project\ddr3_ip_inst\inst1\syn_results\ddr_clks_inst1.srs
+
+compiler Completed
+Return Code: 0
+Run Time:0h:00m:02s
+
+Running: multi_srs_gen (Multi-srs Generator) on ddr_clks_inst1|syn_results
+
+multi_srs_gen Completed
+Return Code: 0
+Run Time:0h:00m:00s
+Copied C:\Users\hreddy\Desktop\VIP_DDR3_Demo\DDR3_project\ddr3_ip_inst\inst1\syn_results\synwork\ddr_clks_inst1_mult.srs to C:\Users\hreddy\Desktop\VIP_DDR3_Demo\DDR3_project\ddr3_ip_inst\inst1\syn_results\ddr_clks_inst1.srs
+Copied C:\Users\hreddy\Desktop\VIP_DDR3_Demo\DDR3_project\ddr3_ip_inst\inst1\syn_results\ddr_clks_inst1.srr to C:\Users\hreddy\Desktop\VIP_DDR3_Demo\DDR3_project\ddr3_ip_inst\inst1\syn_results\ddr_clks_inst1.srf
+Complete: Compile Process on ddr_clks_inst1|syn_results
+
+Running: premap (Pre-mapping) on ddr_clks_inst1|syn_results
+
+premap Completed with warnings
+Return Code: 1
+Run Time:0h:00m:01s
+Complete: Compile on ddr_clks_inst1|syn_results
+
+Running: map (Map) on ddr_clks_inst1|syn_results
+License granted for 4 parallel jobs
+
+Running: fpga_mapper (Map & Optimize) on ddr_clks_inst1|syn_results
+Copied C:\Users\hreddy\Desktop\VIP_DDR3_Demo\DDR3_project\ddr3_ip_inst\inst1\syn_results\synwork\ddr_clks_inst1_m.srm to C:\Users\hreddy\Desktop\VIP_DDR3_Demo\DDR3_project\ddr3_ip_inst\inst1\syn_results\ddr_clks_inst1.srm
+
+fpga_mapper Completed with warnings
+Return Code: 1
+Run Time:0h:00m:01s
+Complete: Map on ddr_clks_inst1|syn_results
+Copied C:\Users\hreddy\Desktop\VIP_DDR3_Demo\DDR3_project\ddr3_ip_inst\inst1\syn_results\ddr_clks_inst1.srr to C:\Users\hreddy\Desktop\VIP_DDR3_Demo\DDR3_project\ddr3_ip_inst\inst1\syn_results\ddr_clks_inst1.srf
+Complete: Logic Synthesis on ddr_clks_inst1|syn_results
+
+exit status=0
+
+exit status=0
+

@@ -1,0 +1,32 @@
+SCUBA, Version Diamond (64-bit) 3.9.0.99.2
+Thu Jul 06 09:40:42 2017
+  
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+  
+BEGIN SCUBA Module Synthesis
+  
+    Issued command   : C:\lscc\diamond\3.9_x64\ispfpga\bin\nt64\scuba.exe -w -n debayer_dpram -lang verilog -synth synplify -bus_exp 7 -bb -arch sa5p00m -type ramdps -device LFE5UM-85F -raddr_width 12 -rwidth 12 -waddr_width 12 -wwidth 12 -rnum_words 4096 -wnum_words 4096 -outdata REGISTERED -cascade -1 -resetmode SYNC -sync_reset -mem_init0 
+    Circuit name     : debayer_dpram
+    Module type      : RAM_DP
+    Module Version   : 6.5
+    Ports            : 
+    Inputs       : WrAddress[11:0], RdAddress[11:0], Data[11:0], WE, RdClock, RdClockEn, Reset, WrClock, WrClockEn
+    Outputs      : Q[11:0]
+    I/O buffer       : not inserted
+    Memory file      : INIT_ALL_0s
+    EDIF output      : debayer_dpram.edn
+    Verilog output   : debayer_dpram.v
+    Verilog template : debayer_dpram_tmpl.v
+    Verilog testbench: tb_debayer_dpram_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : debayer_dpram.srp
+    Estimated Resource Usage:
+            EBR : 3
+  
+END   SCUBA Module Synthesis
+

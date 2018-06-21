@@ -1,0 +1,188 @@
+BLOCK RESETPATHS ;
+BLOCK ASYNCPATHS ;
+LOCATE COMP "scl" SITE "D15" ;
+LOCATE COMP "scl2" SITE "A14" ;
+LOCATE COMP "sda" SITE "F15" ;
+LOCATE COMP "sda2" SITE "B14" ;
+IOBUF PORT "scl" OPENDRAIN=OFF IO_TYPE=LVCMOS33 SLEWRATE=SLOW PULLMODE=NONE ;
+IOBUF PORT "scl2" OPENDRAIN=OFF IO_TYPE=LVCMOS33 PULLMODE=NONE ;
+IOBUF PORT "sda" OPENDRAIN=OFF IO_TYPE=LVCMOS33 PULLMODE=NONE ;
+IOBUF PORT "sda2" OPENDRAIN=OFF IO_TYPE=LVCMOS33 PULLMODE=NONE ;
+IOBUF PORT "reset_n" PULLMODE=DOWN IO_TYPE=LVCMOS33 ;
+LOCATE COMP "reset_sensor" SITE "B4" ;
+LOCATE COMP "reset_n" SITE "AH1" ;
+LOCATE COMP "q" SITE "AG30" ;
+BLOCK JTAGPATHS ;
+LOCATE COMP "data_enable" SITE "C25" ;
+LOCATE COMP "hsync" SITE "D25" ;
+LOCATE COMP "vsync" SITE "A25" ;
+LOCATE COMP "pixclk_out" SITE "E25" ;
+LOCATE COMP "pix_green[4]" SITE "T32" ;
+LOCATE COMP "pix_green[5]" SITE "AC30" ;
+LOCATE COMP "pix_green[6]" SITE "AB31" ;
+LOCATE COMP "pix_green[7]" SITE "V32" ;
+LOCATE COMP "pix_green[8]" SITE "W32" ;
+LOCATE COMP "pix_green[9]" SITE "Y26" ;
+LOCATE COMP "pix_green[10]" SITE "W30" ;
+LOCATE COMP "pix_red[4]" SITE "AB28" ;
+LOCATE COMP "pix_red[5]" SITE "AB27" ;
+LOCATE COMP "pix_red[6]" SITE "AC26" ;
+LOCATE COMP "HDMI_scl" SITE "AG1" ;
+LOCATE COMP "HDMI_sda" SITE "AJ1" ;
+IOBUF PORT "pix_blue[0]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_blue[1]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_blue[2]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_blue[3]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_blue[4]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_blue[5]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_blue[6]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_blue[7]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_blue[8]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_blue[9]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_blue[10]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_blue[11]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_green[0]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_green[1]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_green[2]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_green[3]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_green[4]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_green[5]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_green[6]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_green[7]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_green[8]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_green[9]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_green[10]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_green[11]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_red[0]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_red[1]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_red[2]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_red[3]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_red[4]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_red[5]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_red[6]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_red[7]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_red[8]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_red[9]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_red[10]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pix_red[11]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "pixclk_out" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "q" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "reset_crosslink" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "reset_sensor" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "vsync" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "data_enable" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "hsync" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "HDMI_scl" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "HDMI_sda" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "CSI2_sens_data[0]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "CSI2_sens_data[1]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "CSI2_sens_data[2]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "CSI2_sens_data[3]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "CSI2_sens_data[4]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "CSI2_sens_data[5]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "CSI2_sens_data[6]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "CSI2_sens_data[7]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "CSI2_sens_data[8]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "CSI2_sens_data[9]" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "CSI2_sens_fv" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "CSI2_sens_lv" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "CSI2_sens_clk" IO_TYPE=LVCMOS33 ;
+LOCATE COMP "CSI2_sens_data[0]" SITE "A13" ;
+LOCATE COMP "CSI2_sens_data[1]" SITE "A8" ;
+LOCATE COMP "CSI2_sens_data[2]" SITE "F9" ;
+LOCATE COMP "CSI2_sens_data[3]" SITE "D9" ;
+LOCATE COMP "CSI2_sens_data[4]" SITE "C9" ;
+LOCATE COMP "CSI2_sens_data[5]" SITE "A9" ;
+LOCATE COMP "CSI2_sens_data[6]" SITE "C10" ;
+LOCATE COMP "CSI2_sens_data[7]" SITE "B10" ;
+LOCATE COMP "CSI2_sens_data[8]" SITE "A10" ;
+LOCATE COMP "CSI2_sens_data[9]" SITE "E11" ;
+LOCATE COMP "CSI2_sens_fv" SITE "K27" ;
+LOCATE COMP "CSI2_sens_lv" SITE "K26" ;
+LOCATE COMP "CSI2_sens_clk" SITE "P27" ;
+LOCATE COMP "reset_crosslink" SITE "D13" ;
+LOCATE COMP "pix_blue[4]" SITE "T29" ;
+LOCATE COMP "pix_blue[5]" SITE "U28" ;
+LOCATE COMP "pix_blue[6]" SITE "V27" ;
+LOCATE COMP "pix_blue[7]" SITE "V26" ;
+LOCATE COMP "pix_blue[8]" SITE "AC31" ;
+LOCATE COMP "pix_blue[9]" SITE "AB32" ;
+LOCATE COMP "pix_blue[10]" SITE "AC32" ;
+LOCATE COMP "pix_blue[11]" SITE "AD32" ;
+LOCATE COMP "pix_green[11]" SITE "T30" ;
+LOCATE COMP "pix_red[7]" SITE "Y27" ;
+LOCATE COMP "pix_red[8]" SITE "D24" ;
+LOCATE COMP "pix_red[9]" SITE "W28" ;
+LOCATE COMP "pix_red[10]" SITE "F25" ;
+LOCATE COMP "pix_red[11]" SITE "F17" ;
+LOCATE COMP "pix_blue[0]" SITE "T31" ;
+LOCATE COMP "pix_blue[1]" SITE "R32" ;
+LOCATE COMP "pix_blue[2]" SITE "Y32" ;
+LOCATE COMP "pix_blue[3]" SITE "W31" ;
+LOCATE COMP "pix_green[0]" SITE "AD26" ;
+LOCATE COMP "pix_green[1]" SITE "T26" ;
+LOCATE COMP "pix_green[2]" SITE "R26" ;
+LOCATE COMP "pix_green[3]" SITE "A24" ;
+LOCATE COMP "pix_red[0]" SITE "AE27" ;
+LOCATE COMP "pix_red[1]" SITE "AD27" ;
+LOCATE COMP "pix_red[2]" SITE "AB29" ;
+LOCATE COMP "pix_red[3]" SITE "AB30" ;
+DEFINE PORT GROUP "videoIN" "CSI2_sens_fv" 
+"CSI2_sens_lv" 
+"CSI2_sens_data[9]" 
+"CSI2_sens_data[8]" 
+"CSI2_sens_data[7]" 
+"CSI2_sens_data[6]" 
+"CSI2_sens_data[5]" 
+"CSI2_sens_data[4]" 
+"CSI2_sens_data[3]" 
+"CSI2_sens_data[2]" 
+"CSI2_sens_data[1]" 
+"CSI2_sens_data[0]" ;
+DEFINE PORT GROUP "videoOUT" "pix_red[11]" 
+"pix_red[10]" 
+"pix_red[9]" 
+"pix_red[8]" 
+"pix_red[7]" 
+"pix_red[6]" 
+"pix_red[5]" 
+"pix_red[4]" 
+"pix_red[3]" 
+"pix_red[2]" 
+"pix_red[1]" 
+"pix_red[0]" 
+"pix_green[11]" 
+"pix_green[10]" 
+"pix_green[9]" 
+"pix_green[8]" 
+"pix_green[7]" 
+"pix_green[6]" 
+"pix_green[5]" 
+"pix_green[4]" 
+"pix_green[3]" 
+"pix_green[2]" 
+"pix_green[1]" 
+"pix_green[0]" 
+"pix_blue[11]" 
+"pix_blue[10]" 
+"pix_blue[9]" 
+"pix_blue[8]" 
+"pix_blue[7]" 
+"pix_blue[6]" 
+"pix_blue[5]" 
+"pix_blue[4]" 
+"pix_blue[3]" 
+"pix_blue[2]" 
+"pix_blue[1]" 
+"pix_blue[0]" 
+"hsync" 
+"vsync" 
+"data_enable" ;
+FREQUENCY PORT "CSI2_sens_clk" 148.500000 MHz ;
+LOCATE COMP "clk_i" SITE "E17" ;
+FREQUENCY PORT "clk_i" 27.000000 MHz ;
+CLOCK_TO_OUT PORT "scl" 8.500000 ns MIN 3.500000 ns CLKNET "clk_i_c" ;
+CLOCK_TO_OUT PORT "sda" 8.500000 ns MIN 3.500000 ns CLKNET "clk_i_c" ;
+CLOCK_TO_OUT PORT "scl2" 8.500000 ns MIN 3.500000 ns CLKNET "clk_i_c" ;
+CLOCK_TO_OUT PORT "sda2" 8.500000 ns MIN 3.500000 ns CLKNET "clk_i_c" ;
+IOBUF PORT "clk_i" IO_TYPE=LVCMOS33 ;

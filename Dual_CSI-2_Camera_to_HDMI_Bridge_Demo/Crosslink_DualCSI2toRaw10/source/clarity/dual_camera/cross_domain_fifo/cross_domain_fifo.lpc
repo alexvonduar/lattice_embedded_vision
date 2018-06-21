@@ -1,0 +1,53 @@
+[Device]
+Family=lifmd
+PartType=LIF-MD6000
+PartName=LIF-MD6000-6MG81I
+SpeedGrade=6
+Package=CSFBGA81
+OperatingCondition=IND
+Status=C
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=LPM
+CoreStatus=Demo
+CoreName=FIFO_DC
+CoreRevision=5.8
+ModuleName=cross_domain_fifo
+SourceFormat=verilog
+ParameterFileVersion=1.0
+Date=06/30/2016
+Time=10:30:07
+
+[Parameters]
+Verilog=1
+VHDL=0
+EDIF=1
+Destination=Synplicity
+Expression=BusA(0 to 7)
+Order=Big Endian [MSB:LSB]
+IO=0
+FIFOImp=EBR Based
+Depth=256
+Width=32
+RDepth=256
+RWidth=32
+regout=0
+ClockEn=0
+CtrlByRdEn=0
+EmpFlg=1
+PeMode=Static - Dual Threshold
+PeAssert=10
+PeDeassert=12
+FullFlg=1
+PfMode=Static - Dual Threshold
+PfAssert=21
+PfDeassert=4
+Reset=Async
+Reset1=Sync
+RDataCount=0
+WDataCount=0
+EnECC=0
+
+[Command]
+cmd_line= -w -n cross_domain_fifo -lang verilog -synth lse -bus_exp 7 -bb -arch sn5w00 -type ebfifo -depth 256 -width 32 -rwidth 32 -reset_rel SYNC -pe 10 -pe2 12 -pf 21 -pf2 4

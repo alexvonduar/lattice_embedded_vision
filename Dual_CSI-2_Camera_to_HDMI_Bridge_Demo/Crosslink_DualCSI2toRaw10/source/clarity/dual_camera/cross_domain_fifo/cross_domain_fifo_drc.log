@@ -1,0 +1,3 @@
+Results of NGD DRC are available in cross_domain_fifo_drc.log.
+WARNING - synthesis: DRC checking was skipped because the -ngo option was used.
+Writing NGD file C:/Users/dchitti1/Desktop/from robin/DPHY_to_CMOS_Camera/phase_3rd/source/clarity/dual_camera/cross_domain_fifo/cross_domain_fifo.ngo.

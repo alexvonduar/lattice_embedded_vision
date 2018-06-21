@@ -1,0 +1,3 @@
+Results of NGD DRC are available in pll_double_drc.log.
+WARNING - synthesis: DRC checking was skipped because the -ngo option was used.
+Writing NGD file D:/Project/Crosslink_Video_protocol_board/CLean/Dual_Camera_to_Parallel_Crosslink/source/clarity/dual_camera/pll_double/pll_double.ngo.

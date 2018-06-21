@@ -1,0 +1,40 @@
+[Device]
+Family=sa5p00m
+PartType=LFE5UM-85F
+PartName=LFE5UM-85F-8BG756C
+SpeedGrade=8
+Package=CABGA756
+OperatingCondition=COM
+Status=P
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=IPCFG
+CoreStatus=Demo
+CoreName=Color Space Converter
+CoreRevision=3.1
+ModuleName=colorspace
+SourceFormat=verilog
+ParameterFileVersion=3.1
+Date=11/30/2017
+Time=12:28:03
+
+[Parameters]
+coretype=custom
+inputmethod=0
+registeredinput=1
+dintype=Unsigned
+dinwidth=12
+cwidth=9
+doutype=Unsigned
+doutwidth=12
+msbrounding=Saturation
+lsbrounding=Rounding up
+keepblank=0
+dspblkmult=0
+clken=0
+syncrst=0
+iovalid=0
+vsscore=0
+tagswidth=1
+CORE_SYNP=1

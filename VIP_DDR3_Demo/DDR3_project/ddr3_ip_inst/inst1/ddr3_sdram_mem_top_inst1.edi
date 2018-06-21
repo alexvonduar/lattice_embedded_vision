@@ -1,0 +1,1136 @@
+(edif ddr3_sdram_mem_top_inst1
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timeStamp 2017 6 28 15 18 54)
+      (author "Synopsys, Inc.")
+      (program "Synplify Pro" (version "L-2016.03L-1, mapper maplat, Build 1498R"))
+     )
+   )
+  (library LUCENT
+    (edifLevel 0)
+    (technology (numberDefinition ))
+    (cell GSR (cellType GENERIC)
+       (view PRIM (viewType NETLIST)
+         (interface
+           (port GSR (direction INPUT))
+         )
+       )
+    )
+    (cell VHI (cellType GENERIC)
+       (view PRIM (viewType NETLIST)
+         (interface
+           (port Z (direction OUTPUT))
+         )
+       )
+    )
+    (cell VLO (cellType GENERIC)
+       (view PRIM (viewType NETLIST)
+         (interface
+           (port Z (direction OUTPUT))
+         )
+       )
+    )
+  )
+  (library work
+    (edifLevel 0)
+    (technology (numberDefinition ))
+    (cell inst1 (cellType GENERIC)
+       (view verilog (viewType NETLIST)
+         (interface
+           (port eclk (direction INPUT))
+           (port sclk (direction INPUT))
+           (port rst_n (direction INPUT))
+           (port mem_rst_n (direction INPUT))
+           (port init_start (direction INPUT))
+           (port (array (rename cmd "cmd[3:0]") 4) (direction INPUT))
+           (port (array (rename addr "addr[26:0]") 27) (direction INPUT))
+           (port (array (rename cmd_burst_cnt "cmd_burst_cnt[4:0]") 5) (direction INPUT))
+           (port cmd_valid (direction INPUT))
+           (port ofly_burst_len (direction INPUT))
+           (port (array (rename write_data "write_data[63:0]") 64) (direction INPUT))
+           (port datain_rdy (direction OUTPUT))
+           (port (array (rename data_mask "data_mask[7:0]") 8) (direction INPUT))
+           (port ddr_rst (direction INPUT))
+           (port (array (rename dqsdel "dqsdel[1:0]") 2) (direction INPUT))
+           (port dqsbuf_pause (direction INPUT))
+           (port clocking_good (direction INPUT))
+           (port update_done (direction INPUT))
+           (port cmd_rdy (direction OUTPUT))
+           (port init_done (direction OUTPUT))
+           (port rt_err (direction OUTPUT))
+           (port wl_err (direction OUTPUT))
+           (port (array (rename read_data "read_data[63:0]") 64) (direction OUTPUT))
+           (port read_data_valid (direction OUTPUT))
+           (port dll_update (direction OUTPUT))
+           (port em_ddr_reset_n (direction OUTPUT))
+           (port (array (rename em_ddr_data "em_ddr_data[15:0]") 16) (direction INOUT))
+           (port (array (rename em_ddr_dqs "em_ddr_dqs[1:0]") 2) (direction INOUT))
+           (port (array (rename em_ddr_clk "em_ddr_clk[0:0]") 1) (direction OUTPUT))
+           (port (array (rename em_ddr_cke "em_ddr_cke[0:0]") 1) (direction OUTPUT))
+           (port em_ddr_ras_n (direction OUTPUT))
+           (port em_ddr_cas_n (direction OUTPUT))
+           (port em_ddr_we_n (direction OUTPUT))
+           (port (array (rename em_ddr_cs_n "em_ddr_cs_n[0:0]") 1) (direction OUTPUT))
+           (port (array (rename em_ddr_odt "em_ddr_odt[0:0]") 1) (direction OUTPUT))
+           (port (array (rename em_ddr_dm "em_ddr_dm[1:0]") 2) (direction OUTPUT))
+           (port (array (rename em_ddr_ba "em_ddr_ba[2:0]") 3) (direction OUTPUT))
+           (port (array (rename em_ddr_addr "em_ddr_addr[13:0]") 14) (direction OUTPUT))
+         )
+        (property black_box_pad_pin (string "em_ddr_data[15:0],em_ddr_dqs[1:0],em_ddr_dm[1:0],em_ddr_clk[0:0],em_ddr_odt[0:0],em_ddr_cke[0:0],em_ddr_cs_n[0:0],em_ddr_addr[26:0],em_ddr_ba[2:0],em_ddr_ras_n,em_ddr_cas_n,em_ddr_we_n"))
+        (property orig_inst_of (string "inst1"))
+       )
+    )
+    (cell ddr_clks_inst1 (cellType GENERIC)
+       (view verilog (viewType NETLIST)
+         (interface
+           (port rst_n (direction INPUT))
+           (port clk_in (direction INPUT))
+           (port eclk (direction OUTPUT))
+           (port sclk (direction OUTPUT))
+           (port dll_update (direction INPUT))
+           (port update_done (direction OUTPUT))
+           (port dqsbuf_pause (direction OUTPUT))
+           (port ddr_rst (direction OUTPUT))
+           (port ddrdel (direction OUTPUT))
+           (port (array (rename dcntl "dcntl[7:0]") 8) (direction OUTPUT))
+           (port clocking_good (direction OUTPUT))
+         )
+        (property black_box_pad_pin (string "clk_in"))
+        (property orig_inst_of (string "ddr_clks_inst1"))
+       )
+    )
+    (cell ddr3_sdram_mem_top_inst1 (cellType GENERIC)
+       (view verilog (viewType NETLIST)
+         (interface
+           (port clk_in (direction INPUT))
+           (port rst_n (direction INPUT))
+           (port mem_rst_n (direction INPUT))
+           (port init_start (direction INPUT))
+           (port (array (rename cmd "cmd[3:0]") 4) (direction INPUT))
+           (port (array (rename addr "addr[26:0]") 27) (direction INPUT))
+           (port (array (rename cmd_burst_cnt "cmd_burst_cnt[4:0]") 5) (direction INPUT))
+           (port cmd_valid (direction INPUT))
+           (port ofly_burst_len (direction INPUT))
+           (port (array (rename write_data "write_data[63:0]") 64) (direction INPUT))
+           (port (array (rename data_mask "data_mask[7:0]") 8) (direction INPUT))
+           (port cmd_rdy (direction OUTPUT))
+           (port datain_rdy (direction OUTPUT))
+           (port init_done (direction OUTPUT))
+           (port rt_err (direction OUTPUT))
+           (port wl_err (direction OUTPUT))
+           (port (array (rename read_data "read_data[63:0]") 64) (direction OUTPUT))
+           (port read_data_valid (direction OUTPUT))
+           (port sclk_out (direction OUTPUT))
+           (port clocking_good (direction OUTPUT))
+           (port em_ddr_reset_n (direction OUTPUT))
+           (port (array (rename em_ddr_data "em_ddr_data[15:0]") 16) (direction INOUT))
+           (port (array (rename em_ddr_dqs "em_ddr_dqs[1:0]") 2) (direction INOUT))
+           (port (array (rename em_ddr_clk "em_ddr_clk[0:0]") 1) (direction OUTPUT))
+           (port (array (rename em_ddr_cke "em_ddr_cke[0:0]") 1) (direction OUTPUT))
+           (port em_ddr_ras_n (direction OUTPUT))
+           (port em_ddr_cas_n (direction OUTPUT))
+           (port em_ddr_we_n (direction OUTPUT))
+           (port (array (rename em_ddr_cs_n "em_ddr_cs_n[0:0]") 1) (direction OUTPUT))
+           (port (array (rename em_ddr_odt "em_ddr_odt[0:0]") 1) (direction OUTPUT))
+           (port (array (rename em_ddr_dm "em_ddr_dm[1:0]") 2) (direction OUTPUT))
+           (port (array (rename em_ddr_ba "em_ddr_ba[2:0]") 3) (direction OUTPUT))
+           (port (array (rename em_ddr_addr "em_ddr_addr[13:0]") 14) (direction OUTPUT))
+         )
+         (contents
+          (instance GND_0 (viewRef PRIM (cellRef VLO (libraryRef LUCENT)))          )
+          (instance VCC_0 (viewRef PRIM (cellRef VHI (libraryRef LUCENT)))          )
+          (instance GSR_INST (viewRef PRIM (cellRef GSR (libraryRef LUCENT)))
+          )
+          (instance U1_clocking (viewRef verilog (cellRef ddr_clks_inst1))          )
+          (instance U1_inst1 (viewRef verilog (cellRef inst1))          )
+          (net clk_in (joined
+           (portRef clk_in)
+           (portRef clk_in (instanceRef U1_clocking))
+          ))
+          (net rst_n (joined
+           (portRef rst_n)
+           (portRef rst_n (instanceRef U1_inst1))
+           (portRef rst_n (instanceRef U1_clocking))
+          ))
+          (net mem_rst_n (joined
+           (portRef mem_rst_n)
+           (portRef mem_rst_n (instanceRef U1_inst1))
+          ))
+          (net init_start (joined
+           (portRef init_start)
+           (portRef init_start (instanceRef U1_inst1))
+          ))
+          (net (rename cmd_0 "cmd[0]") (joined
+           (portRef (member cmd 3))
+           (portRef (member cmd 3) (instanceRef U1_inst1))
+          ))
+          (net (rename cmd_1 "cmd[1]") (joined
+           (portRef (member cmd 2))
+           (portRef (member cmd 2) (instanceRef U1_inst1))
+          ))
+          (net (rename cmd_2 "cmd[2]") (joined
+           (portRef (member cmd 1))
+           (portRef (member cmd 1) (instanceRef U1_inst1))
+          ))
+          (net (rename cmd_3 "cmd[3]") (joined
+           (portRef (member cmd 0))
+           (portRef (member cmd 0) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_0 "addr[0]") (joined
+           (portRef (member addr 26))
+           (portRef (member addr 26) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_1 "addr[1]") (joined
+           (portRef (member addr 25))
+           (portRef (member addr 25) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_2 "addr[2]") (joined
+           (portRef (member addr 24))
+           (portRef (member addr 24) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_3 "addr[3]") (joined
+           (portRef (member addr 23))
+           (portRef (member addr 23) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_4 "addr[4]") (joined
+           (portRef (member addr 22))
+           (portRef (member addr 22) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_5 "addr[5]") (joined
+           (portRef (member addr 21))
+           (portRef (member addr 21) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_6 "addr[6]") (joined
+           (portRef (member addr 20))
+           (portRef (member addr 20) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_7 "addr[7]") (joined
+           (portRef (member addr 19))
+           (portRef (member addr 19) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_8 "addr[8]") (joined
+           (portRef (member addr 18))
+           (portRef (member addr 18) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_9 "addr[9]") (joined
+           (portRef (member addr 17))
+           (portRef (member addr 17) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_10 "addr[10]") (joined
+           (portRef (member addr 16))
+           (portRef (member addr 16) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_11 "addr[11]") (joined
+           (portRef (member addr 15))
+           (portRef (member addr 15) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_12 "addr[12]") (joined
+           (portRef (member addr 14))
+           (portRef (member addr 14) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_13 "addr[13]") (joined
+           (portRef (member addr 13))
+           (portRef (member addr 13) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_14 "addr[14]") (joined
+           (portRef (member addr 12))
+           (portRef (member addr 12) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_15 "addr[15]") (joined
+           (portRef (member addr 11))
+           (portRef (member addr 11) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_16 "addr[16]") (joined
+           (portRef (member addr 10))
+           (portRef (member addr 10) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_17 "addr[17]") (joined
+           (portRef (member addr 9))
+           (portRef (member addr 9) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_18 "addr[18]") (joined
+           (portRef (member addr 8))
+           (portRef (member addr 8) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_19 "addr[19]") (joined
+           (portRef (member addr 7))
+           (portRef (member addr 7) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_20 "addr[20]") (joined
+           (portRef (member addr 6))
+           (portRef (member addr 6) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_21 "addr[21]") (joined
+           (portRef (member addr 5))
+           (portRef (member addr 5) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_22 "addr[22]") (joined
+           (portRef (member addr 4))
+           (portRef (member addr 4) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_23 "addr[23]") (joined
+           (portRef (member addr 3))
+           (portRef (member addr 3) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_24 "addr[24]") (joined
+           (portRef (member addr 2))
+           (portRef (member addr 2) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_25 "addr[25]") (joined
+           (portRef (member addr 1))
+           (portRef (member addr 1) (instanceRef U1_inst1))
+          ))
+          (net (rename addr_26 "addr[26]") (joined
+           (portRef (member addr 0))
+           (portRef (member addr 0) (instanceRef U1_inst1))
+          ))
+          (net (rename cmd_burst_cnt_0 "cmd_burst_cnt[0]") (joined
+           (portRef (member cmd_burst_cnt 4))
+           (portRef (member cmd_burst_cnt 4) (instanceRef U1_inst1))
+          ))
+          (net (rename cmd_burst_cnt_1 "cmd_burst_cnt[1]") (joined
+           (portRef (member cmd_burst_cnt 3))
+           (portRef (member cmd_burst_cnt 3) (instanceRef U1_inst1))
+          ))
+          (net (rename cmd_burst_cnt_2 "cmd_burst_cnt[2]") (joined
+           (portRef (member cmd_burst_cnt 2))
+           (portRef (member cmd_burst_cnt 2) (instanceRef U1_inst1))
+          ))
+          (net (rename cmd_burst_cnt_3 "cmd_burst_cnt[3]") (joined
+           (portRef (member cmd_burst_cnt 1))
+           (portRef (member cmd_burst_cnt 1) (instanceRef U1_inst1))
+          ))
+          (net (rename cmd_burst_cnt_4 "cmd_burst_cnt[4]") (joined
+           (portRef (member cmd_burst_cnt 0))
+           (portRef (member cmd_burst_cnt 0) (instanceRef U1_inst1))
+          ))
+          (net cmd_valid (joined
+           (portRef cmd_valid)
+           (portRef cmd_valid (instanceRef U1_inst1))
+          ))
+          (net ofly_burst_len (joined
+           (portRef ofly_burst_len)
+           (portRef ofly_burst_len (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_0 "write_data[0]") (joined
+           (portRef (member write_data 63))
+           (portRef (member write_data 63) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_1 "write_data[1]") (joined
+           (portRef (member write_data 62))
+           (portRef (member write_data 62) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_2 "write_data[2]") (joined
+           (portRef (member write_data 61))
+           (portRef (member write_data 61) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_3 "write_data[3]") (joined
+           (portRef (member write_data 60))
+           (portRef (member write_data 60) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_4 "write_data[4]") (joined
+           (portRef (member write_data 59))
+           (portRef (member write_data 59) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_5 "write_data[5]") (joined
+           (portRef (member write_data 58))
+           (portRef (member write_data 58) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_6 "write_data[6]") (joined
+           (portRef (member write_data 57))
+           (portRef (member write_data 57) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_7 "write_data[7]") (joined
+           (portRef (member write_data 56))
+           (portRef (member write_data 56) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_8 "write_data[8]") (joined
+           (portRef (member write_data 55))
+           (portRef (member write_data 55) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_9 "write_data[9]") (joined
+           (portRef (member write_data 54))
+           (portRef (member write_data 54) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_10 "write_data[10]") (joined
+           (portRef (member write_data 53))
+           (portRef (member write_data 53) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_11 "write_data[11]") (joined
+           (portRef (member write_data 52))
+           (portRef (member write_data 52) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_12 "write_data[12]") (joined
+           (portRef (member write_data 51))
+           (portRef (member write_data 51) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_13 "write_data[13]") (joined
+           (portRef (member write_data 50))
+           (portRef (member write_data 50) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_14 "write_data[14]") (joined
+           (portRef (member write_data 49))
+           (portRef (member write_data 49) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_15 "write_data[15]") (joined
+           (portRef (member write_data 48))
+           (portRef (member write_data 48) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_16 "write_data[16]") (joined
+           (portRef (member write_data 47))
+           (portRef (member write_data 47) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_17 "write_data[17]") (joined
+           (portRef (member write_data 46))
+           (portRef (member write_data 46) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_18 "write_data[18]") (joined
+           (portRef (member write_data 45))
+           (portRef (member write_data 45) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_19 "write_data[19]") (joined
+           (portRef (member write_data 44))
+           (portRef (member write_data 44) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_20 "write_data[20]") (joined
+           (portRef (member write_data 43))
+           (portRef (member write_data 43) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_21 "write_data[21]") (joined
+           (portRef (member write_data 42))
+           (portRef (member write_data 42) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_22 "write_data[22]") (joined
+           (portRef (member write_data 41))
+           (portRef (member write_data 41) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_23 "write_data[23]") (joined
+           (portRef (member write_data 40))
+           (portRef (member write_data 40) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_24 "write_data[24]") (joined
+           (portRef (member write_data 39))
+           (portRef (member write_data 39) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_25 "write_data[25]") (joined
+           (portRef (member write_data 38))
+           (portRef (member write_data 38) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_26 "write_data[26]") (joined
+           (portRef (member write_data 37))
+           (portRef (member write_data 37) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_27 "write_data[27]") (joined
+           (portRef (member write_data 36))
+           (portRef (member write_data 36) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_28 "write_data[28]") (joined
+           (portRef (member write_data 35))
+           (portRef (member write_data 35) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_29 "write_data[29]") (joined
+           (portRef (member write_data 34))
+           (portRef (member write_data 34) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_30 "write_data[30]") (joined
+           (portRef (member write_data 33))
+           (portRef (member write_data 33) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_31 "write_data[31]") (joined
+           (portRef (member write_data 32))
+           (portRef (member write_data 32) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_32 "write_data[32]") (joined
+           (portRef (member write_data 31))
+           (portRef (member write_data 31) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_33 "write_data[33]") (joined
+           (portRef (member write_data 30))
+           (portRef (member write_data 30) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_34 "write_data[34]") (joined
+           (portRef (member write_data 29))
+           (portRef (member write_data 29) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_35 "write_data[35]") (joined
+           (portRef (member write_data 28))
+           (portRef (member write_data 28) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_36 "write_data[36]") (joined
+           (portRef (member write_data 27))
+           (portRef (member write_data 27) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_37 "write_data[37]") (joined
+           (portRef (member write_data 26))
+           (portRef (member write_data 26) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_38 "write_data[38]") (joined
+           (portRef (member write_data 25))
+           (portRef (member write_data 25) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_39 "write_data[39]") (joined
+           (portRef (member write_data 24))
+           (portRef (member write_data 24) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_40 "write_data[40]") (joined
+           (portRef (member write_data 23))
+           (portRef (member write_data 23) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_41 "write_data[41]") (joined
+           (portRef (member write_data 22))
+           (portRef (member write_data 22) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_42 "write_data[42]") (joined
+           (portRef (member write_data 21))
+           (portRef (member write_data 21) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_43 "write_data[43]") (joined
+           (portRef (member write_data 20))
+           (portRef (member write_data 20) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_44 "write_data[44]") (joined
+           (portRef (member write_data 19))
+           (portRef (member write_data 19) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_45 "write_data[45]") (joined
+           (portRef (member write_data 18))
+           (portRef (member write_data 18) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_46 "write_data[46]") (joined
+           (portRef (member write_data 17))
+           (portRef (member write_data 17) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_47 "write_data[47]") (joined
+           (portRef (member write_data 16))
+           (portRef (member write_data 16) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_48 "write_data[48]") (joined
+           (portRef (member write_data 15))
+           (portRef (member write_data 15) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_49 "write_data[49]") (joined
+           (portRef (member write_data 14))
+           (portRef (member write_data 14) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_50 "write_data[50]") (joined
+           (portRef (member write_data 13))
+           (portRef (member write_data 13) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_51 "write_data[51]") (joined
+           (portRef (member write_data 12))
+           (portRef (member write_data 12) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_52 "write_data[52]") (joined
+           (portRef (member write_data 11))
+           (portRef (member write_data 11) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_53 "write_data[53]") (joined
+           (portRef (member write_data 10))
+           (portRef (member write_data 10) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_54 "write_data[54]") (joined
+           (portRef (member write_data 9))
+           (portRef (member write_data 9) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_55 "write_data[55]") (joined
+           (portRef (member write_data 8))
+           (portRef (member write_data 8) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_56 "write_data[56]") (joined
+           (portRef (member write_data 7))
+           (portRef (member write_data 7) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_57 "write_data[57]") (joined
+           (portRef (member write_data 6))
+           (portRef (member write_data 6) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_58 "write_data[58]") (joined
+           (portRef (member write_data 5))
+           (portRef (member write_data 5) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_59 "write_data[59]") (joined
+           (portRef (member write_data 4))
+           (portRef (member write_data 4) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_60 "write_data[60]") (joined
+           (portRef (member write_data 3))
+           (portRef (member write_data 3) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_61 "write_data[61]") (joined
+           (portRef (member write_data 2))
+           (portRef (member write_data 2) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_62 "write_data[62]") (joined
+           (portRef (member write_data 1))
+           (portRef (member write_data 1) (instanceRef U1_inst1))
+          ))
+          (net (rename write_data_63 "write_data[63]") (joined
+           (portRef (member write_data 0))
+           (portRef (member write_data 0) (instanceRef U1_inst1))
+          ))
+          (net (rename data_mask_0 "data_mask[0]") (joined
+           (portRef (member data_mask 7))
+           (portRef (member data_mask 7) (instanceRef U1_inst1))
+          ))
+          (net (rename data_mask_1 "data_mask[1]") (joined
+           (portRef (member data_mask 6))
+           (portRef (member data_mask 6) (instanceRef U1_inst1))
+          ))
+          (net (rename data_mask_2 "data_mask[2]") (joined
+           (portRef (member data_mask 5))
+           (portRef (member data_mask 5) (instanceRef U1_inst1))
+          ))
+          (net (rename data_mask_3 "data_mask[3]") (joined
+           (portRef (member data_mask 4))
+           (portRef (member data_mask 4) (instanceRef U1_inst1))
+          ))
+          (net (rename data_mask_4 "data_mask[4]") (joined
+           (portRef (member data_mask 3))
+           (portRef (member data_mask 3) (instanceRef U1_inst1))
+          ))
+          (net (rename data_mask_5 "data_mask[5]") (joined
+           (portRef (member data_mask 2))
+           (portRef (member data_mask 2) (instanceRef U1_inst1))
+          ))
+          (net (rename data_mask_6 "data_mask[6]") (joined
+           (portRef (member data_mask 1))
+           (portRef (member data_mask 1) (instanceRef U1_inst1))
+          ))
+          (net (rename data_mask_7 "data_mask[7]") (joined
+           (portRef (member data_mask 0))
+           (portRef (member data_mask 0) (instanceRef U1_inst1))
+          ))
+          (net cmd_rdy (joined
+           (portRef cmd_rdy (instanceRef U1_inst1))
+           (portRef cmd_rdy)
+          ))
+          (net datain_rdy (joined
+           (portRef datain_rdy (instanceRef U1_inst1))
+           (portRef datain_rdy)
+          ))
+          (net init_done (joined
+           (portRef init_done (instanceRef U1_inst1))
+           (portRef init_done)
+          ))
+          (net rt_err (joined
+           (portRef rt_err (instanceRef U1_inst1))
+           (portRef rt_err)
+          ))
+          (net wl_err (joined
+           (portRef wl_err (instanceRef U1_inst1))
+           (portRef wl_err)
+          ))
+          (net (rename read_data_0 "read_data[0]") (joined
+           (portRef (member read_data 63) (instanceRef U1_inst1))
+           (portRef (member read_data 63))
+          ))
+          (net (rename read_data_1 "read_data[1]") (joined
+           (portRef (member read_data 62) (instanceRef U1_inst1))
+           (portRef (member read_data 62))
+          ))
+          (net (rename read_data_2 "read_data[2]") (joined
+           (portRef (member read_data 61) (instanceRef U1_inst1))
+           (portRef (member read_data 61))
+          ))
+          (net (rename read_data_3 "read_data[3]") (joined
+           (portRef (member read_data 60) (instanceRef U1_inst1))
+           (portRef (member read_data 60))
+          ))
+          (net (rename read_data_4 "read_data[4]") (joined
+           (portRef (member read_data 59) (instanceRef U1_inst1))
+           (portRef (member read_data 59))
+          ))
+          (net (rename read_data_5 "read_data[5]") (joined
+           (portRef (member read_data 58) (instanceRef U1_inst1))
+           (portRef (member read_data 58))
+          ))
+          (net (rename read_data_6 "read_data[6]") (joined
+           (portRef (member read_data 57) (instanceRef U1_inst1))
+           (portRef (member read_data 57))
+          ))
+          (net (rename read_data_7 "read_data[7]") (joined
+           (portRef (member read_data 56) (instanceRef U1_inst1))
+           (portRef (member read_data 56))
+          ))
+          (net (rename read_data_8 "read_data[8]") (joined
+           (portRef (member read_data 55) (instanceRef U1_inst1))
+           (portRef (member read_data 55))
+          ))
+          (net (rename read_data_9 "read_data[9]") (joined
+           (portRef (member read_data 54) (instanceRef U1_inst1))
+           (portRef (member read_data 54))
+          ))
+          (net (rename read_data_10 "read_data[10]") (joined
+           (portRef (member read_data 53) (instanceRef U1_inst1))
+           (portRef (member read_data 53))
+          ))
+          (net (rename read_data_11 "read_data[11]") (joined
+           (portRef (member read_data 52) (instanceRef U1_inst1))
+           (portRef (member read_data 52))
+          ))
+          (net (rename read_data_12 "read_data[12]") (joined
+           (portRef (member read_data 51) (instanceRef U1_inst1))
+           (portRef (member read_data 51))
+          ))
+          (net (rename read_data_13 "read_data[13]") (joined
+           (portRef (member read_data 50) (instanceRef U1_inst1))
+           (portRef (member read_data 50))
+          ))
+          (net (rename read_data_14 "read_data[14]") (joined
+           (portRef (member read_data 49) (instanceRef U1_inst1))
+           (portRef (member read_data 49))
+          ))
+          (net (rename read_data_15 "read_data[15]") (joined
+           (portRef (member read_data 48) (instanceRef U1_inst1))
+           (portRef (member read_data 48))
+          ))
+          (net (rename read_data_16 "read_data[16]") (joined
+           (portRef (member read_data 47) (instanceRef U1_inst1))
+           (portRef (member read_data 47))
+          ))
+          (net (rename read_data_17 "read_data[17]") (joined
+           (portRef (member read_data 46) (instanceRef U1_inst1))
+           (portRef (member read_data 46))
+          ))
+          (net (rename read_data_18 "read_data[18]") (joined
+           (portRef (member read_data 45) (instanceRef U1_inst1))
+           (portRef (member read_data 45))
+          ))
+          (net (rename read_data_19 "read_data[19]") (joined
+           (portRef (member read_data 44) (instanceRef U1_inst1))
+           (portRef (member read_data 44))
+          ))
+          (net (rename read_data_20 "read_data[20]") (joined
+           (portRef (member read_data 43) (instanceRef U1_inst1))
+           (portRef (member read_data 43))
+          ))
+          (net (rename read_data_21 "read_data[21]") (joined
+           (portRef (member read_data 42) (instanceRef U1_inst1))
+           (portRef (member read_data 42))
+          ))
+          (net (rename read_data_22 "read_data[22]") (joined
+           (portRef (member read_data 41) (instanceRef U1_inst1))
+           (portRef (member read_data 41))
+          ))
+          (net (rename read_data_23 "read_data[23]") (joined
+           (portRef (member read_data 40) (instanceRef U1_inst1))
+           (portRef (member read_data 40))
+          ))
+          (net (rename read_data_24 "read_data[24]") (joined
+           (portRef (member read_data 39) (instanceRef U1_inst1))
+           (portRef (member read_data 39))
+          ))
+          (net (rename read_data_25 "read_data[25]") (joined
+           (portRef (member read_data 38) (instanceRef U1_inst1))
+           (portRef (member read_data 38))
+          ))
+          (net (rename read_data_26 "read_data[26]") (joined
+           (portRef (member read_data 37) (instanceRef U1_inst1))
+           (portRef (member read_data 37))
+          ))
+          (net (rename read_data_27 "read_data[27]") (joined
+           (portRef (member read_data 36) (instanceRef U1_inst1))
+           (portRef (member read_data 36))
+          ))
+          (net (rename read_data_28 "read_data[28]") (joined
+           (portRef (member read_data 35) (instanceRef U1_inst1))
+           (portRef (member read_data 35))
+          ))
+          (net (rename read_data_29 "read_data[29]") (joined
+           (portRef (member read_data 34) (instanceRef U1_inst1))
+           (portRef (member read_data 34))
+          ))
+          (net (rename read_data_30 "read_data[30]") (joined
+           (portRef (member read_data 33) (instanceRef U1_inst1))
+           (portRef (member read_data 33))
+          ))
+          (net (rename read_data_31 "read_data[31]") (joined
+           (portRef (member read_data 32) (instanceRef U1_inst1))
+           (portRef (member read_data 32))
+          ))
+          (net (rename read_data_32 "read_data[32]") (joined
+           (portRef (member read_data 31) (instanceRef U1_inst1))
+           (portRef (member read_data 31))
+          ))
+          (net (rename read_data_33 "read_data[33]") (joined
+           (portRef (member read_data 30) (instanceRef U1_inst1))
+           (portRef (member read_data 30))
+          ))
+          (net (rename read_data_34 "read_data[34]") (joined
+           (portRef (member read_data 29) (instanceRef U1_inst1))
+           (portRef (member read_data 29))
+          ))
+          (net (rename read_data_35 "read_data[35]") (joined
+           (portRef (member read_data 28) (instanceRef U1_inst1))
+           (portRef (member read_data 28))
+          ))
+          (net (rename read_data_36 "read_data[36]") (joined
+           (portRef (member read_data 27) (instanceRef U1_inst1))
+           (portRef (member read_data 27))
+          ))
+          (net (rename read_data_37 "read_data[37]") (joined
+           (portRef (member read_data 26) (instanceRef U1_inst1))
+           (portRef (member read_data 26))
+          ))
+          (net (rename read_data_38 "read_data[38]") (joined
+           (portRef (member read_data 25) (instanceRef U1_inst1))
+           (portRef (member read_data 25))
+          ))
+          (net (rename read_data_39 "read_data[39]") (joined
+           (portRef (member read_data 24) (instanceRef U1_inst1))
+           (portRef (member read_data 24))
+          ))
+          (net (rename read_data_40 "read_data[40]") (joined
+           (portRef (member read_data 23) (instanceRef U1_inst1))
+           (portRef (member read_data 23))
+          ))
+          (net (rename read_data_41 "read_data[41]") (joined
+           (portRef (member read_data 22) (instanceRef U1_inst1))
+           (portRef (member read_data 22))
+          ))
+          (net (rename read_data_42 "read_data[42]") (joined
+           (portRef (member read_data 21) (instanceRef U1_inst1))
+           (portRef (member read_data 21))
+          ))
+          (net (rename read_data_43 "read_data[43]") (joined
+           (portRef (member read_data 20) (instanceRef U1_inst1))
+           (portRef (member read_data 20))
+          ))
+          (net (rename read_data_44 "read_data[44]") (joined
+           (portRef (member read_data 19) (instanceRef U1_inst1))
+           (portRef (member read_data 19))
+          ))
+          (net (rename read_data_45 "read_data[45]") (joined
+           (portRef (member read_data 18) (instanceRef U1_inst1))
+           (portRef (member read_data 18))
+          ))
+          (net (rename read_data_46 "read_data[46]") (joined
+           (portRef (member read_data 17) (instanceRef U1_inst1))
+           (portRef (member read_data 17))
+          ))
+          (net (rename read_data_47 "read_data[47]") (joined
+           (portRef (member read_data 16) (instanceRef U1_inst1))
+           (portRef (member read_data 16))
+          ))
+          (net (rename read_data_48 "read_data[48]") (joined
+           (portRef (member read_data 15) (instanceRef U1_inst1))
+           (portRef (member read_data 15))
+          ))
+          (net (rename read_data_49 "read_data[49]") (joined
+           (portRef (member read_data 14) (instanceRef U1_inst1))
+           (portRef (member read_data 14))
+          ))
+          (net (rename read_data_50 "read_data[50]") (joined
+           (portRef (member read_data 13) (instanceRef U1_inst1))
+           (portRef (member read_data 13))
+          ))
+          (net (rename read_data_51 "read_data[51]") (joined
+           (portRef (member read_data 12) (instanceRef U1_inst1))
+           (portRef (member read_data 12))
+          ))
+          (net (rename read_data_52 "read_data[52]") (joined
+           (portRef (member read_data 11) (instanceRef U1_inst1))
+           (portRef (member read_data 11))
+          ))
+          (net (rename read_data_53 "read_data[53]") (joined
+           (portRef (member read_data 10) (instanceRef U1_inst1))
+           (portRef (member read_data 10))
+          ))
+          (net (rename read_data_54 "read_data[54]") (joined
+           (portRef (member read_data 9) (instanceRef U1_inst1))
+           (portRef (member read_data 9))
+          ))
+          (net (rename read_data_55 "read_data[55]") (joined
+           (portRef (member read_data 8) (instanceRef U1_inst1))
+           (portRef (member read_data 8))
+          ))
+          (net (rename read_data_56 "read_data[56]") (joined
+           (portRef (member read_data 7) (instanceRef U1_inst1))
+           (portRef (member read_data 7))
+          ))
+          (net (rename read_data_57 "read_data[57]") (joined
+           (portRef (member read_data 6) (instanceRef U1_inst1))
+           (portRef (member read_data 6))
+          ))
+          (net (rename read_data_58 "read_data[58]") (joined
+           (portRef (member read_data 5) (instanceRef U1_inst1))
+           (portRef (member read_data 5))
+          ))
+          (net (rename read_data_59 "read_data[59]") (joined
+           (portRef (member read_data 4) (instanceRef U1_inst1))
+           (portRef (member read_data 4))
+          ))
+          (net (rename read_data_60 "read_data[60]") (joined
+           (portRef (member read_data 3) (instanceRef U1_inst1))
+           (portRef (member read_data 3))
+          ))
+          (net (rename read_data_61 "read_data[61]") (joined
+           (portRef (member read_data 2) (instanceRef U1_inst1))
+           (portRef (member read_data 2))
+          ))
+          (net (rename read_data_62 "read_data[62]") (joined
+           (portRef (member read_data 1) (instanceRef U1_inst1))
+           (portRef (member read_data 1))
+          ))
+          (net (rename read_data_63 "read_data[63]") (joined
+           (portRef (member read_data 0) (instanceRef U1_inst1))
+           (portRef (member read_data 0))
+          ))
+          (net read_data_valid (joined
+           (portRef read_data_valid (instanceRef U1_inst1))
+           (portRef read_data_valid)
+          ))
+          (net clocking_good (joined
+           (portRef clocking_good (instanceRef U1_clocking))
+           (portRef clocking_good (instanceRef U1_inst1))
+           (portRef clocking_good)
+          ))
+          (net em_ddr_reset_n (joined
+           (portRef em_ddr_reset_n (instanceRef U1_inst1))
+           (portRef em_ddr_reset_n)
+          ))
+          (net (rename em_ddr_data_0 "em_ddr_data[0]") (joined
+           (portRef (member em_ddr_data 15) (instanceRef U1_inst1))
+           (portRef (member em_ddr_data 15))
+          ))
+          (net (rename em_ddr_data_1 "em_ddr_data[1]") (joined
+           (portRef (member em_ddr_data 14) (instanceRef U1_inst1))
+           (portRef (member em_ddr_data 14))
+          ))
+          (net (rename em_ddr_data_2 "em_ddr_data[2]") (joined
+           (portRef (member em_ddr_data 13) (instanceRef U1_inst1))
+           (portRef (member em_ddr_data 13))
+          ))
+          (net (rename em_ddr_data_3 "em_ddr_data[3]") (joined
+           (portRef (member em_ddr_data 12) (instanceRef U1_inst1))
+           (portRef (member em_ddr_data 12))
+          ))
+          (net (rename em_ddr_data_4 "em_ddr_data[4]") (joined
+           (portRef (member em_ddr_data 11) (instanceRef U1_inst1))
+           (portRef (member em_ddr_data 11))
+          ))
+          (net (rename em_ddr_data_5 "em_ddr_data[5]") (joined
+           (portRef (member em_ddr_data 10) (instanceRef U1_inst1))
+           (portRef (member em_ddr_data 10))
+          ))
+          (net (rename em_ddr_data_6 "em_ddr_data[6]") (joined
+           (portRef (member em_ddr_data 9) (instanceRef U1_inst1))
+           (portRef (member em_ddr_data 9))
+          ))
+          (net (rename em_ddr_data_7 "em_ddr_data[7]") (joined
+           (portRef (member em_ddr_data 8) (instanceRef U1_inst1))
+           (portRef (member em_ddr_data 8))
+          ))
+          (net (rename em_ddr_data_8 "em_ddr_data[8]") (joined
+           (portRef (member em_ddr_data 7) (instanceRef U1_inst1))
+           (portRef (member em_ddr_data 7))
+          ))
+          (net (rename em_ddr_data_9 "em_ddr_data[9]") (joined
+           (portRef (member em_ddr_data 6) (instanceRef U1_inst1))
+           (portRef (member em_ddr_data 6))
+          ))
+          (net (rename em_ddr_data_10 "em_ddr_data[10]") (joined
+           (portRef (member em_ddr_data 5) (instanceRef U1_inst1))
+           (portRef (member em_ddr_data 5))
+          ))
+          (net (rename em_ddr_data_11 "em_ddr_data[11]") (joined
+           (portRef (member em_ddr_data 4) (instanceRef U1_inst1))
+           (portRef (member em_ddr_data 4))
+          ))
+          (net (rename em_ddr_data_12 "em_ddr_data[12]") (joined
+           (portRef (member em_ddr_data 3) (instanceRef U1_inst1))
+           (portRef (member em_ddr_data 3))
+          ))
+          (net (rename em_ddr_data_13 "em_ddr_data[13]") (joined
+           (portRef (member em_ddr_data 2) (instanceRef U1_inst1))
+           (portRef (member em_ddr_data 2))
+          ))
+          (net (rename em_ddr_data_14 "em_ddr_data[14]") (joined
+           (portRef (member em_ddr_data 1) (instanceRef U1_inst1))
+           (portRef (member em_ddr_data 1))
+          ))
+          (net (rename em_ddr_data_15 "em_ddr_data[15]") (joined
+           (portRef (member em_ddr_data 0) (instanceRef U1_inst1))
+           (portRef (member em_ddr_data 0))
+          ))
+          (net (rename em_ddr_dqs_0 "em_ddr_dqs[0]") (joined
+           (portRef (member em_ddr_dqs 1) (instanceRef U1_inst1))
+           (portRef (member em_ddr_dqs 1))
+          ))
+          (net (rename em_ddr_dqs_1 "em_ddr_dqs[1]") (joined
+           (portRef (member em_ddr_dqs 0) (instanceRef U1_inst1))
+           (portRef (member em_ddr_dqs 0))
+          ))
+          (net (rename em_ddr_clk_0 "em_ddr_clk[0]") (joined
+           (portRef (member em_ddr_clk 0) (instanceRef U1_inst1))
+           (portRef (member em_ddr_clk 0))
+          ))
+          (net (rename em_ddr_cke_0 "em_ddr_cke[0]") (joined
+           (portRef (member em_ddr_cke 0) (instanceRef U1_inst1))
+           (portRef (member em_ddr_cke 0))
+          ))
+          (net em_ddr_ras_n (joined
+           (portRef em_ddr_ras_n (instanceRef U1_inst1))
+           (portRef em_ddr_ras_n)
+          ))
+          (net em_ddr_cas_n (joined
+           (portRef em_ddr_cas_n (instanceRef U1_inst1))
+           (portRef em_ddr_cas_n)
+          ))
+          (net em_ddr_we_n (joined
+           (portRef em_ddr_we_n (instanceRef U1_inst1))
+           (portRef em_ddr_we_n)
+          ))
+          (net (rename em_ddr_cs_n_0 "em_ddr_cs_n[0]") (joined
+           (portRef (member em_ddr_cs_n 0) (instanceRef U1_inst1))
+           (portRef (member em_ddr_cs_n 0))
+          ))
+          (net (rename em_ddr_odt_0 "em_ddr_odt[0]") (joined
+           (portRef (member em_ddr_odt 0) (instanceRef U1_inst1))
+           (portRef (member em_ddr_odt 0))
+          ))
+          (net (rename em_ddr_dm_0 "em_ddr_dm[0]") (joined
+           (portRef (member em_ddr_dm 1) (instanceRef U1_inst1))
+           (portRef (member em_ddr_dm 1))
+          ))
+          (net (rename em_ddr_dm_1 "em_ddr_dm[1]") (joined
+           (portRef (member em_ddr_dm 0) (instanceRef U1_inst1))
+           (portRef (member em_ddr_dm 0))
+          ))
+          (net (rename em_ddr_ba_0 "em_ddr_ba[0]") (joined
+           (portRef (member em_ddr_ba 2) (instanceRef U1_inst1))
+           (portRef (member em_ddr_ba 2))
+          ))
+          (net (rename em_ddr_ba_1 "em_ddr_ba[1]") (joined
+           (portRef (member em_ddr_ba 1) (instanceRef U1_inst1))
+           (portRef (member em_ddr_ba 1))
+          ))
+          (net (rename em_ddr_ba_2 "em_ddr_ba[2]") (joined
+           (portRef (member em_ddr_ba 0) (instanceRef U1_inst1))
+           (portRef (member em_ddr_ba 0))
+          ))
+          (net (rename em_ddr_addr_0 "em_ddr_addr[0]") (joined
+           (portRef (member em_ddr_addr 13) (instanceRef U1_inst1))
+           (portRef (member em_ddr_addr 13))
+          ))
+          (net (rename em_ddr_addr_1 "em_ddr_addr[1]") (joined
+           (portRef (member em_ddr_addr 12) (instanceRef U1_inst1))
+           (portRef (member em_ddr_addr 12))
+          ))
+          (net (rename em_ddr_addr_2 "em_ddr_addr[2]") (joined
+           (portRef (member em_ddr_addr 11) (instanceRef U1_inst1))
+           (portRef (member em_ddr_addr 11))
+          ))
+          (net (rename em_ddr_addr_3 "em_ddr_addr[3]") (joined
+           (portRef (member em_ddr_addr 10) (instanceRef U1_inst1))
+           (portRef (member em_ddr_addr 10))
+          ))
+          (net (rename em_ddr_addr_4 "em_ddr_addr[4]") (joined
+           (portRef (member em_ddr_addr 9) (instanceRef U1_inst1))
+           (portRef (member em_ddr_addr 9))
+          ))
+          (net (rename em_ddr_addr_5 "em_ddr_addr[5]") (joined
+           (portRef (member em_ddr_addr 8) (instanceRef U1_inst1))
+           (portRef (member em_ddr_addr 8))
+          ))
+          (net (rename em_ddr_addr_6 "em_ddr_addr[6]") (joined
+           (portRef (member em_ddr_addr 7) (instanceRef U1_inst1))
+           (portRef (member em_ddr_addr 7))
+          ))
+          (net (rename em_ddr_addr_7 "em_ddr_addr[7]") (joined
+           (portRef (member em_ddr_addr 6) (instanceRef U1_inst1))
+           (portRef (member em_ddr_addr 6))
+          ))
+          (net (rename em_ddr_addr_8 "em_ddr_addr[8]") (joined
+           (portRef (member em_ddr_addr 5) (instanceRef U1_inst1))
+           (portRef (member em_ddr_addr 5))
+          ))
+          (net (rename em_ddr_addr_9 "em_ddr_addr[9]") (joined
+           (portRef (member em_ddr_addr 4) (instanceRef U1_inst1))
+           (portRef (member em_ddr_addr 4))
+          ))
+          (net (rename em_ddr_addr_10 "em_ddr_addr[10]") (joined
+           (portRef (member em_ddr_addr 3) (instanceRef U1_inst1))
+           (portRef (member em_ddr_addr 3))
+          ))
+          (net (rename em_ddr_addr_11 "em_ddr_addr[11]") (joined
+           (portRef (member em_ddr_addr 2) (instanceRef U1_inst1))
+           (portRef (member em_ddr_addr 2))
+          ))
+          (net (rename em_ddr_addr_12 "em_ddr_addr[12]") (joined
+           (portRef (member em_ddr_addr 1) (instanceRef U1_inst1))
+           (portRef (member em_ddr_addr 1))
+          ))
+          (net (rename em_ddr_addr_13 "em_ddr_addr[13]") (joined
+           (portRef (member em_ddr_addr 0) (instanceRef U1_inst1))
+           (portRef (member em_ddr_addr 0))
+          ))
+          (net eclk (joined
+           (portRef eclk (instanceRef U1_inst1))
+           (portRef eclk (instanceRef U1_clocking))
+          ))
+          (net ddr_rst (joined
+           (portRef ddr_rst (instanceRef U1_clocking))
+           (portRef ddr_rst (instanceRef U1_inst1))
+          ))
+          (net ddrdel (joined
+           (portRef ddrdel (instanceRef U1_clocking))
+           (portRef (member dqsdel 0) (instanceRef U1_inst1))
+           (portRef (member dqsdel 1) (instanceRef U1_inst1))
+          ))
+          (net dqsbuf_pause (joined
+           (portRef dqsbuf_pause (instanceRef U1_clocking))
+           (portRef dqsbuf_pause (instanceRef U1_inst1))
+          ))
+          (net update_done (joined
+           (portRef update_done (instanceRef U1_clocking))
+           (portRef update_done (instanceRef U1_inst1))
+          ))
+          (net dll_update (joined
+           (portRef dll_update (instanceRef U1_inst1))
+           (portRef dll_update (instanceRef U1_clocking))
+          ))
+          (net (rename dcntl_0 "dcntl[0]") (joined
+           (portRef (member dcntl 7) (instanceRef U1_clocking))
+          ))
+          (net (rename dcntl_1 "dcntl[1]") (joined
+           (portRef (member dcntl 6) (instanceRef U1_clocking))
+          ))
+          (net (rename dcntl_2 "dcntl[2]") (joined
+           (portRef (member dcntl 5) (instanceRef U1_clocking))
+          ))
+          (net (rename dcntl_3 "dcntl[3]") (joined
+           (portRef (member dcntl 4) (instanceRef U1_clocking))
+          ))
+          (net (rename dcntl_4 "dcntl[4]") (joined
+           (portRef (member dcntl 3) (instanceRef U1_clocking))
+          ))
+          (net (rename dcntl_5 "dcntl[5]") (joined
+           (portRef (member dcntl 2) (instanceRef U1_clocking))
+          ))
+          (net (rename dcntl_6 "dcntl[6]") (joined
+           (portRef (member dcntl 1) (instanceRef U1_clocking))
+          ))
+          (net (rename dcntl_7 "dcntl[7]") (joined
+           (portRef (member dcntl 0) (instanceRef U1_clocking))
+          ))
+          (net (rename sclk "sclk_out") (joined
+           (portRef sclk (instanceRef U1_inst1))
+           (portRef sclk_out)
+           (portRef sclk (instanceRef U1_clocking))
+          ))
+          (net VCC (joined
+           (portRef Z (instanceRef VCC_0))
+           (portRef GSR (instanceRef GSR_INST))
+          ))
+         )
+        (property orig_inst_of (string "ddr3_sdram_mem_top_inst1"))
+       )
+    )
+  )
+  (design ddr3_sdram_mem_top_inst1 (cellRef ddr3_sdram_mem_top_inst1 (libraryRef work))
+	(property PART (string "lfe5um_85f-6") ))
+)

@@ -1,0 +1,29 @@
+SCUBA, Version Diamond (64-bit) 3.9.0.99.2
+Thu Jun 15 17:34:21 2017
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : C:\lscc\diamond\3.9_x64\ispfpga\bin\nt64\scuba.exe -w -n rb_ram -lang verilog -synth synplify -bus_exp 7 -bb -arch sa5p00m -type ramdps -device LFE5UM-85F -raddr_width 11 -rwidth 12 -waddr_width 11 -wwidth 12 -rnum_words 2048 -wnum_words 2048 -outdata REGISTERED -cascade -1 -resetmode SYNC -sync_reset -mem_init0 -fdc C:/Users/crobinso/Documents/EVDK/ECP5_ISP_fifo_min/source/clarity/dp_ram/rb_ram/rb_ram.fdc 
+    Circuit name     : rb_ram
+    Module type      : RAM_DP
+    Module Version   : 6.5
+    Ports            : 
+	Inputs       : WrAddress[10:0], RdAddress[10:0], Data[11:0], WE, RdClock, RdClockEn, Reset, WrClock, WrClockEn
+	Outputs      : Q[11:0]
+    I/O buffer       : not inserted
+    Memory file      : INIT_ALL_0s
+    EDIF output      : rb_ram.edn
+    Verilog output   : rb_ram.v
+    Verilog template : rb_ram_tmpl.v
+    Verilog testbench: tb_rb_ram_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : rb_ram.srp
+    Element Usage    :
+         DP16KD : 2
+    Estimated Resource Usage:
+            EBR : 2

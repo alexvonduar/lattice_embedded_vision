@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="Raw10toParallel" device="LFE5UM-85F-8BG756C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="gammaCorrector_top" top="RAW10toParallel"/>
+        <Source name="source/RAW10toParallel.v" type="Verilog" type_short="Verilog">
+            <Options top_module="RAW10toParallel"/>
+        </Source>
+        <Source name="source/ab.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/blanking_adjustment.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/debayer.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/gamma_correction.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/hdmi_i2c_core.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/hdmi_i2c_ctrl.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/hdmi_i2c_top.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/i2c_core.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/i2c_ctrl.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/i2c_top.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/image_pipe.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/clarity/dp_ram/dp_ram.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="source/clarity/Gamma/Gamma.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="source/clarity/image_fifo/image_fifo.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="source/color.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/clarity/CSC/CSC.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="Raw10toParallel.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Raw10toParallel1.sty"/>
+</BaliProject>

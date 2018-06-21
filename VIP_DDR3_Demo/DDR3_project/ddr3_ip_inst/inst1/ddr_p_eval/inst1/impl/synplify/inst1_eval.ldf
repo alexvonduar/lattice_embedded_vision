@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="inst1_eval" device="LFE5UM-85F-8BG756C" synthesis="synplify" default_implementation="inst1_eval">
+    <Implementation title="inst1_eval" dir="inst1_eval" description="inst1_eval" default_strategy="inst1_eval">
+        <Options>
+            <Option name="include path" value="../../src/params/"/>
+            <Option name="top" value="ddr3_sdram_mem_top_inst1"/>
+        </Options>
+        <Source name="../../../../ddr_clks_inst1_bb.v" type="Verilog"/>
+        <Source name="../../../../inst1_bb.v" type="Verilog"/>
+        <Source name="../../impl/ddr3_sdram_mem_top_wrapper_inst1.v" type="Verilog"/>
+        <Source name="inst1_eval.lpf" type="Logic Preference"/>
+    </Implementation>
+    <Strategy name="inst1_eval" file="inst1_eval.sty"/>
+</BaliProject>
+

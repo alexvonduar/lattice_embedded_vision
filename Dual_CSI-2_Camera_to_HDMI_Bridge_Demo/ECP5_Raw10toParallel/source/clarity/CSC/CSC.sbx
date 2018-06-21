@@ -1,0 +1,994 @@
+<!DOCTYPE CSC>
+<lattice:project>
+    <spirit:component>
+        <spirit:vendor>LATTICE</spirit:vendor>
+        <spirit:library>LOCAL</spirit:library>
+        <spirit:name>CSC</spirit:name>
+        <spirit:version>1.0</spirit:version>
+        <spirit:fileSets>
+            <spirit:fileset>
+                <spirit:name>Diamond_Synthesis</spirit:name>
+                <spirit:group>synthesis</spirit:group>
+                <spirit:file>
+                    <spirit:name>./CSC.v</spirit:name>
+                    <spirit:fileType>verilogSource</spirit:fileType>
+                </spirit:file>
+            </spirit:fileset>
+            <spirit:fileset>
+                <spirit:name>Diamond_Simulation</spirit:name>
+                <spirit:group>simulation</spirit:group>
+                <spirit:file>
+                    <spirit:name>./CSC.v</spirit:name>
+                    <spirit:fileType>verilogSource</spirit:fileType>
+                </spirit:file>
+            </spirit:fileset>
+        </spirit:fileSets>
+        <spirit:componentGenerators/>
+        <spirit:model>
+            <spirit:views/>
+            <spirit:ports>
+                <spirit:port>
+                    <spirit:name>colorspace_clk</spirit:name>
+                    <spirit:displayName>colorspace_clk</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">colorspace.clk</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>colorspace_rstn</spirit:name>
+                    <spirit:displayName>colorspace_rstn</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">colorspace.rstn</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>colorspace_din0</spirit:name>
+                    <spirit:displayName>colorspace_din0</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>11</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">colorspace.din0</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>colorspace_din1</spirit:name>
+                    <spirit:displayName>colorspace_din1</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>11</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">colorspace.din1</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>colorspace_din2</spirit:name>
+                    <spirit:displayName>colorspace_din2</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>11</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">colorspace.din2</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>colorspace_dout0</spirit:name>
+                    <spirit:displayName>colorspace_dout0</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>11</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">colorspace.dout0</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>colorspace_dout1</spirit:name>
+                    <spirit:displayName>colorspace_dout1</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>11</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">colorspace.dout1</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>colorspace_dout2</spirit:name>
+                    <spirit:displayName>colorspace_dout2</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>11</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">colorspace.dout2</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+            </spirit:ports>
+        </spirit:model>
+        <spirit:vendorExtensions>
+            <lattice:device>LFE5UM-85F-8BG756C</lattice:device>
+            <lattice:synthesis>synplify</lattice:synthesis>
+            <lattice:date>2017-10-12.15:20:24</lattice:date>
+            <lattice:modified>2017-11-30.12:28:24</lattice:modified>
+            <lattice:diamond>3.10.0.111.2</lattice:diamond>
+            <lattice:language>Verilog</lattice:language>
+            <lattice:attributes>
+                <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
+                <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeConfig">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeConnect">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeDevice">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeLocate">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangePack">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangePart">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeSynthesis">false</lattice:attribute>
+                <lattice:attribute lattice:name="Migrate">false</lattice:attribute>
+                <lattice:attribute lattice:name="RemovedComponent">false</lattice:attribute>
+            </lattice:attributes>
+            <lattice:elements/>
+            <lattice:lpc/>
+            <lattice:groups/>
+        </spirit:vendorExtensions>
+    </spirit:component>
+    <spirit:design>
+        <spirit:vendor>LATTICE</spirit:vendor>
+        <spirit:library>LOCAL</spirit:library>
+        <spirit:name>CSC</spirit:name>
+        <spirit:version>1.0</spirit:version>
+        <spirit:componentInstances>
+            <spirit:componentInstance>
+                <spirit:instanceName>colorspace</spirit:instanceName>
+                <spirit:componentRef>
+                    <spirit:vendor>Lattice Semiconductor Corporation</spirit:vendor>
+                    <spirit:library>LEGACY</spirit:library>
+                    <spirit:name>Color Space Converter</spirit:name>
+                    <spirit:version>3.1</spirit:version>
+                    <spirit:fileSets>
+                        <spirit:fileset>
+                            <spirit:name>Diamond_Simulation</spirit:name>
+                            <spirit:group>simulation</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./colorspace/colorspace_top.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./colorspace/colorspace_beh.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./colorspace/colorspace_top.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./colorspace/colorspace_beh.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                        </spirit:fileset>
+                        <spirit:fileset>
+                            <spirit:name>Diamond_Synthesis</spirit:name>
+                            <spirit:group>synthesis</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./colorspace/colorspace_top.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./colorspace/colorspace_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./colorspace/colorspace.ngo</spirit:name>
+                                <spirit:userFileType>NGO</spirit:userFileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./colorspace/colorspace_top.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./colorspace/colorspace_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./colorspace/colorspace.ngo</spirit:name>
+                                <spirit:userFileType>NGO</spirit:userFileType>
+                            </spirit:file>
+                        </spirit:fileset>
+                    </spirit:fileSets>
+                    <spirit:componentGenerators>
+                        <spirit:componentGenerator spirit:hidden="true" spirit:scope="instance">
+                            <spirit:name>Configuration</spirit:name>
+                            <spirit:apiType>none</spirit:apiType>
+                            <spirit:generatorExe>${sbp_path}/${instance}/generate_core.tcl</spirit:generatorExe>
+                            <spirit:group>CONFIG</spirit:group>
+                        </spirit:componentGenerator>
+                        <spirit:componentGenerator spirit:hidden="true" spirit:scope="instance">
+                            <spirit:name>Generation</spirit:name>
+                            <spirit:apiType>none</spirit:apiType>
+                            <spirit:generatorExe>${sbp_path}/${instance}/generate_core.tcl</spirit:generatorExe>
+                            <spirit:group>GENERATE</spirit:group>
+                        </spirit:componentGenerator>
+                    </spirit:componentGenerators>
+                    <spirit:model>
+                        <spirit:views/>
+                        <spirit:ports>
+                            <spirit:port>
+                                <spirit:name>clk</spirit:name>
+                                <spirit:displayName>clk</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>rstn</spirit:name>
+                                <spirit:displayName>rstn</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>din0</spirit:name>
+                                <spirit:displayName>din0</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>11</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>din1</spirit:name>
+                                <spirit:displayName>din1</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>11</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>din2</spirit:name>
+                                <spirit:displayName>din2</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>11</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>dout0</spirit:name>
+                                <spirit:displayName>dout0</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>11</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>dout1</spirit:name>
+                                <spirit:displayName>dout1</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>11</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>dout2</spirit:name>
+                                <spirit:displayName>dout2</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>11</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                            </spirit:port>
+                        </spirit:ports>
+                    </spirit:model>
+                    <spirit:vendorExtensions>
+                        <lattice:synthesis>synplify</lattice:synthesis>
+                        <lattice:date>2014-11-14.14:14:33</lattice:date>
+                        <lattice:modified>2017-11-30.12:28:24</lattice:modified>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
+                            <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeConfig">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeConnect">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeDevice">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeLocate">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangePack">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangePart">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeSynthesis">false</lattice:attribute>
+                            <lattice:attribute lattice:name="CoreType">IPCFG</lattice:attribute>
+                            <lattice:attribute lattice:name="DCU_RXREFCLK">PRIMARY</lattice:attribute>
+                            <lattice:attribute lattice:name="DCU_TXREFCLK">PRIMARY</lattice:attribute>
+                            <lattice:attribute lattice:name="Migrate">false</lattice:attribute>
+                            <lattice:attribute lattice:name="RemovedComponent">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ip_top">${instance}_top</lattice:attribute>
+                        </lattice:attributes>
+                        <lattice:elements/>
+                        <lattice:lpc>
+                            <lattice:lpcsection lattice:name="Device"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Family</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">sa5p00m</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>OperatingCondition</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">COM</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Package</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">CABGA756</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>PartName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM-85F-8BG756C</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>PartType</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM-85F</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>SpeedGrade</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">8</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Status</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">P</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcsection lattice:name="IP"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Color Space Converter</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreRevision</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">3.1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreStatus</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Demo</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreType</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">IPCFG</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Date</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">11/30/2017</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>ModuleName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">colorspace</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>ParameterFileVersion</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">3.1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>SourceFormat</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">verilog</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Time</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">12:28:03</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>VendorName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Lattice Semiconductor Corporation</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcsection lattice:name="Parameters"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CORE_SYNP</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>clken</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>coretype</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">custom</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>cwidth</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">9</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>dintype</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Unsigned</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>dinwidth</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">12</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>doutwidth</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">12</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>doutype</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Unsigned</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>dspblkmult</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>inputmethod</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>iovalid</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>keepblank</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>lsbrounding</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Rounding up</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>msbrounding</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Saturation</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>registeredinput</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>syncrst</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>tagswidth</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>vsscore</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                        </lattice:lpc>
+                        <lattice:groups/>
+                    </spirit:vendorExtensions>
+                </spirit:componentRef>
+            </spirit:componentInstance>
+        </spirit:componentInstances>
+        <spirit:adHocConnections>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_clk</spirit:name>
+                <spirit:displayName>colorspace_clk</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="clk" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_clk"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_rstn</spirit:name>
+                <spirit:displayName>colorspace_rstn</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="rstn" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_rstn"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din0</spirit:name>
+                <spirit:displayName>colorspace_din0</spirit:displayName>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="colorspace_din0" spirit:left="11"/>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="din0" spirit:componentRef="colorspace" spirit:left="11"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din0[0]</spirit:name>
+                <spirit:displayName>colorspace_din0[0]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din0[0]"/>
+                <spirit:internalPortReference spirit:portRef="din0[0]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din0[10]</spirit:name>
+                <spirit:displayName>colorspace_din0[10]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din0[10]"/>
+                <spirit:internalPortReference spirit:portRef="din0[10]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din0[11]</spirit:name>
+                <spirit:displayName>colorspace_din0[11]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din0[11]"/>
+                <spirit:internalPortReference spirit:portRef="din0[11]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din0[1]</spirit:name>
+                <spirit:displayName>colorspace_din0[1]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din0[1]"/>
+                <spirit:internalPortReference spirit:portRef="din0[1]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din0[2]</spirit:name>
+                <spirit:displayName>colorspace_din0[2]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din0[2]"/>
+                <spirit:internalPortReference spirit:portRef="din0[2]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din0[3]</spirit:name>
+                <spirit:displayName>colorspace_din0[3]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din0[3]"/>
+                <spirit:internalPortReference spirit:portRef="din0[3]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din0[4]</spirit:name>
+                <spirit:displayName>colorspace_din0[4]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din0[4]"/>
+                <spirit:internalPortReference spirit:portRef="din0[4]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din0[5]</spirit:name>
+                <spirit:displayName>colorspace_din0[5]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din0[5]"/>
+                <spirit:internalPortReference spirit:portRef="din0[5]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din0[6]</spirit:name>
+                <spirit:displayName>colorspace_din0[6]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din0[6]"/>
+                <spirit:internalPortReference spirit:portRef="din0[6]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din0[7]</spirit:name>
+                <spirit:displayName>colorspace_din0[7]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din0[7]"/>
+                <spirit:internalPortReference spirit:portRef="din0[7]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din0[8]</spirit:name>
+                <spirit:displayName>colorspace_din0[8]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din0[8]"/>
+                <spirit:internalPortReference spirit:portRef="din0[8]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din0[9]</spirit:name>
+                <spirit:displayName>colorspace_din0[9]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din0[9]"/>
+                <spirit:internalPortReference spirit:portRef="din0[9]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din1</spirit:name>
+                <spirit:displayName>colorspace_din1</spirit:displayName>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="colorspace_din1" spirit:left="11"/>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="din1" spirit:componentRef="colorspace" spirit:left="11"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din1[0]</spirit:name>
+                <spirit:displayName>colorspace_din1[0]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din1[0]"/>
+                <spirit:internalPortReference spirit:portRef="din1[0]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din1[10]</spirit:name>
+                <spirit:displayName>colorspace_din1[10]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din1[10]"/>
+                <spirit:internalPortReference spirit:portRef="din1[10]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din1[11]</spirit:name>
+                <spirit:displayName>colorspace_din1[11]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din1[11]"/>
+                <spirit:internalPortReference spirit:portRef="din1[11]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din1[1]</spirit:name>
+                <spirit:displayName>colorspace_din1[1]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din1[1]"/>
+                <spirit:internalPortReference spirit:portRef="din1[1]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din1[2]</spirit:name>
+                <spirit:displayName>colorspace_din1[2]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din1[2]"/>
+                <spirit:internalPortReference spirit:portRef="din1[2]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din1[3]</spirit:name>
+                <spirit:displayName>colorspace_din1[3]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din1[3]"/>
+                <spirit:internalPortReference spirit:portRef="din1[3]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din1[4]</spirit:name>
+                <spirit:displayName>colorspace_din1[4]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din1[4]"/>
+                <spirit:internalPortReference spirit:portRef="din1[4]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din1[5]</spirit:name>
+                <spirit:displayName>colorspace_din1[5]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din1[5]"/>
+                <spirit:internalPortReference spirit:portRef="din1[5]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din1[6]</spirit:name>
+                <spirit:displayName>colorspace_din1[6]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din1[6]"/>
+                <spirit:internalPortReference spirit:portRef="din1[6]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din1[7]</spirit:name>
+                <spirit:displayName>colorspace_din1[7]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din1[7]"/>
+                <spirit:internalPortReference spirit:portRef="din1[7]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din1[8]</spirit:name>
+                <spirit:displayName>colorspace_din1[8]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din1[8]"/>
+                <spirit:internalPortReference spirit:portRef="din1[8]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din1[9]</spirit:name>
+                <spirit:displayName>colorspace_din1[9]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din1[9]"/>
+                <spirit:internalPortReference spirit:portRef="din1[9]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din2</spirit:name>
+                <spirit:displayName>colorspace_din2</spirit:displayName>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="colorspace_din2" spirit:left="11"/>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="din2" spirit:componentRef="colorspace" spirit:left="11"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din2[0]</spirit:name>
+                <spirit:displayName>colorspace_din2[0]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din2[0]"/>
+                <spirit:internalPortReference spirit:portRef="din2[0]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din2[10]</spirit:name>
+                <spirit:displayName>colorspace_din2[10]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din2[10]"/>
+                <spirit:internalPortReference spirit:portRef="din2[10]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din2[11]</spirit:name>
+                <spirit:displayName>colorspace_din2[11]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din2[11]"/>
+                <spirit:internalPortReference spirit:portRef="din2[11]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din2[1]</spirit:name>
+                <spirit:displayName>colorspace_din2[1]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din2[1]"/>
+                <spirit:internalPortReference spirit:portRef="din2[1]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din2[2]</spirit:name>
+                <spirit:displayName>colorspace_din2[2]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din2[2]"/>
+                <spirit:internalPortReference spirit:portRef="din2[2]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din2[3]</spirit:name>
+                <spirit:displayName>colorspace_din2[3]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din2[3]"/>
+                <spirit:internalPortReference spirit:portRef="din2[3]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din2[4]</spirit:name>
+                <spirit:displayName>colorspace_din2[4]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din2[4]"/>
+                <spirit:internalPortReference spirit:portRef="din2[4]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din2[5]</spirit:name>
+                <spirit:displayName>colorspace_din2[5]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din2[5]"/>
+                <spirit:internalPortReference spirit:portRef="din2[5]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din2[6]</spirit:name>
+                <spirit:displayName>colorspace_din2[6]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din2[6]"/>
+                <spirit:internalPortReference spirit:portRef="din2[6]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din2[7]</spirit:name>
+                <spirit:displayName>colorspace_din2[7]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din2[7]"/>
+                <spirit:internalPortReference spirit:portRef="din2[7]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din2[8]</spirit:name>
+                <spirit:displayName>colorspace_din2[8]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din2[8]"/>
+                <spirit:internalPortReference spirit:portRef="din2[8]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_din2[9]</spirit:name>
+                <spirit:displayName>colorspace_din2[9]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="colorspace_din2[9]"/>
+                <spirit:internalPortReference spirit:portRef="din2[9]" spirit:componentRef="colorspace"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout0</spirit:name>
+                <spirit:displayName>colorspace_dout0</spirit:displayName>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="colorspace_dout0" spirit:left="11"/>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="dout0" spirit:componentRef="colorspace" spirit:left="11"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout0[0]</spirit:name>
+                <spirit:displayName>colorspace_dout0[0]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout0[0]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout0[0]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout0[10]</spirit:name>
+                <spirit:displayName>colorspace_dout0[10]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout0[10]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout0[10]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout0[11]</spirit:name>
+                <spirit:displayName>colorspace_dout0[11]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout0[11]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout0[11]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout0[1]</spirit:name>
+                <spirit:displayName>colorspace_dout0[1]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout0[1]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout0[1]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout0[2]</spirit:name>
+                <spirit:displayName>colorspace_dout0[2]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout0[2]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout0[2]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout0[3]</spirit:name>
+                <spirit:displayName>colorspace_dout0[3]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout0[3]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout0[3]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout0[4]</spirit:name>
+                <spirit:displayName>colorspace_dout0[4]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout0[4]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout0[4]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout0[5]</spirit:name>
+                <spirit:displayName>colorspace_dout0[5]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout0[5]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout0[5]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout0[6]</spirit:name>
+                <spirit:displayName>colorspace_dout0[6]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout0[6]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout0[6]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout0[7]</spirit:name>
+                <spirit:displayName>colorspace_dout0[7]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout0[7]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout0[7]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout0[8]</spirit:name>
+                <spirit:displayName>colorspace_dout0[8]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout0[8]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout0[8]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout0[9]</spirit:name>
+                <spirit:displayName>colorspace_dout0[9]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout0[9]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout0[9]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout1</spirit:name>
+                <spirit:displayName>colorspace_dout1</spirit:displayName>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="colorspace_dout1" spirit:left="11"/>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="dout1" spirit:componentRef="colorspace" spirit:left="11"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout1[0]</spirit:name>
+                <spirit:displayName>colorspace_dout1[0]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout1[0]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout1[0]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout1[10]</spirit:name>
+                <spirit:displayName>colorspace_dout1[10]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout1[10]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout1[10]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout1[11]</spirit:name>
+                <spirit:displayName>colorspace_dout1[11]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout1[11]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout1[11]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout1[1]</spirit:name>
+                <spirit:displayName>colorspace_dout1[1]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout1[1]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout1[1]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout1[2]</spirit:name>
+                <spirit:displayName>colorspace_dout1[2]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout1[2]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout1[2]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout1[3]</spirit:name>
+                <spirit:displayName>colorspace_dout1[3]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout1[3]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout1[3]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout1[4]</spirit:name>
+                <spirit:displayName>colorspace_dout1[4]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout1[4]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout1[4]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout1[5]</spirit:name>
+                <spirit:displayName>colorspace_dout1[5]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout1[5]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout1[5]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout1[6]</spirit:name>
+                <spirit:displayName>colorspace_dout1[6]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout1[6]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout1[6]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout1[7]</spirit:name>
+                <spirit:displayName>colorspace_dout1[7]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout1[7]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout1[7]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout1[8]</spirit:name>
+                <spirit:displayName>colorspace_dout1[8]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout1[8]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout1[8]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout1[9]</spirit:name>
+                <spirit:displayName>colorspace_dout1[9]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout1[9]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout1[9]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout2</spirit:name>
+                <spirit:displayName>colorspace_dout2</spirit:displayName>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="colorspace_dout2" spirit:left="11"/>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="dout2" spirit:componentRef="colorspace" spirit:left="11"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout2[0]</spirit:name>
+                <spirit:displayName>colorspace_dout2[0]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout2[0]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout2[0]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout2[10]</spirit:name>
+                <spirit:displayName>colorspace_dout2[10]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout2[10]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout2[10]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout2[11]</spirit:name>
+                <spirit:displayName>colorspace_dout2[11]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout2[11]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout2[11]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout2[1]</spirit:name>
+                <spirit:displayName>colorspace_dout2[1]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout2[1]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout2[1]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout2[2]</spirit:name>
+                <spirit:displayName>colorspace_dout2[2]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout2[2]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout2[2]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout2[3]</spirit:name>
+                <spirit:displayName>colorspace_dout2[3]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout2[3]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout2[3]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout2[4]</spirit:name>
+                <spirit:displayName>colorspace_dout2[4]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout2[4]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout2[4]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout2[5]</spirit:name>
+                <spirit:displayName>colorspace_dout2[5]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout2[5]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout2[5]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout2[6]</spirit:name>
+                <spirit:displayName>colorspace_dout2[6]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout2[6]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout2[6]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout2[7]</spirit:name>
+                <spirit:displayName>colorspace_dout2[7]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout2[7]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout2[7]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout2[8]</spirit:name>
+                <spirit:displayName>colorspace_dout2[8]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout2[8]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout2[8]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>colorspace_dout2[9]</spirit:name>
+                <spirit:displayName>colorspace_dout2[9]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout2[9]" spirit:componentRef="colorspace"/>
+                <spirit:externalPortReference spirit:portRef="colorspace_dout2[9]"/>
+            </spirit:adHocConnection>
+        </spirit:adHocConnections>
+    </spirit:design>
+</lattice:project>

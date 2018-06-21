@@ -1,0 +1,33 @@
+SCUBA, Version Diamond (64-bit) 3.8.0.64.0
+Fri Jul 01 12:17:58 2016
+  
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+  
+BEGIN SCUBA Module Synthesis
+  
+    Issued command   : C:\lscc\diamond\3.8_x64\ispfpga\bin\nt64\scuba.exe -w -n LUT_FIFO -lang verilog -synth lse -bus_exp 7 -bb -arch sn5w00 -type ebfifo -depth 2048 -width 10 -rwidth 10 -reset_rel SYNC -pe 10 -pe2 12 -pf 508 -pf2 506 
+    Circuit name     : LUT_FIFO
+    Module type      : ebfifo
+    Module Version   : 5.8
+    Ports            : 
+    Inputs       : Data[9:0], WrClock, RdClock, WrEn, RdEn, Reset, RPReset
+    Outputs      : Q[9:0], Empty, Full, AlmostEmpty, AlmostFull
+    I/O buffer       : not inserted
+    EDIF output      : LUT_FIFO.edn
+    Verilog output   : LUT_FIFO.v
+    Verilog template : LUT_FIFO_tmpl.v
+    Verilog testbench: tb_LUT_FIFO_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : LUT_FIFO.srp
+    Estimated Resource Usage:
+            LUT : 247
+            EBR : 3
+            Reg : 172
+  
+END   SCUBA Module Synthesis
+

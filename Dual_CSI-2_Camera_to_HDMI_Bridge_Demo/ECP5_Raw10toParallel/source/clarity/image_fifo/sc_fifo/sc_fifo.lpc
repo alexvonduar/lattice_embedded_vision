@@ -1,0 +1,50 @@
+[Device]
+Family=ecp5um
+PartType=LFE5UM-85F
+PartName=LFE5UM-85F-8BG756I
+SpeedGrade=8
+Package=CABGA756
+OperatingCondition=IND
+Status=P
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=LPM
+CoreStatus=Demo
+CoreName=FIFO
+CoreRevision=5.1
+ModuleName=sc_fifo
+SourceFormat=verilog
+ParameterFileVersion=1.0
+Date=06/02/2017
+Time=10:45:29
+
+[Parameters]
+Verilog=1
+VHDL=0
+EDIF=1
+Destination=Synplicity
+Expression=BusA(0 to 7)
+Order=Big Endian [MSB:LSB]
+IO=0
+FIFOImp=EBR Based
+Depth=32768
+Width=10
+regout=1
+CtrlByRdEn=0
+EmpFlg=0
+PeMode=Static - Dual Threshold
+PeAssert=10
+PeDeassert=12
+FullFlg=0
+PfMode=Static - Dual Threshold
+PfAssert=508
+PfDeassert=506
+Reset=Async
+Reset1=Sync
+RDataCount=0
+EnECC=0
+EnFWFT=0
+
+[Command]
+cmd_line= -w -n sc_fifo -lang verilog -synth synplify -bus_exp 7 -bb -arch sa5p00m -type ebfifo -sync_mode -depth 32768 -width 10 -regout -no_enable -pe -1 -pf -1 -reset_rel SYNC

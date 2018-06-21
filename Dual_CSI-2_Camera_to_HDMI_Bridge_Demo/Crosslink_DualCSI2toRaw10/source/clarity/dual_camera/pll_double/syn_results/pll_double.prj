@@ -1,0 +1,48 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Synplify OEM project file D:/Project/ECP5_DEMO/crosslink/phase_second_design/source/clarity/dual_camera/pll_double/syn_results/pll_double.prj
+#-- Written on Fri Jun 17 12:19:49 2016
+
+
+#device options
+set_option -technology lifmd
+set_option -part LIF-MD6000
+set_option -speed_grade 6
+
+#use verilog 2001 standard option
+set_option -vlog_std v2001
+
+#map options
+set_option -frequency 100
+set_option -fanout_limit 50
+set_option -disable_io_insertion true
+set_option -retiming false
+set_option -pipe false
+set_option -pipe false
+set_option -force_gsr false
+
+#simulation options
+set_option -write_verilog true
+set_option -write_vhdl true
+
+#timing analysis options
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#-- add_file options
+add_file -verilog -lib work "C:/lscc/diamond/3.8_x64/cae_library/synthesis/verilog/lifmd.v"
+add_file -verilog -lib work "C:/lscc/diamond/3.8_x64/cae_library/synthesis/verilog/pmi_def.v"
+add_file -verilog -lib work "D:/Project/ECP5_DEMO/crosslink/phase_second_design/source/clarity/dual_camera/pll_double/pll_double.v"
+add_file -constraint {"D:/Project/ECP5_DEMO/crosslink/phase_second_design/source/clarity/dual_camera/pll_double/pll_double.fdc"}
+
+#-- top module name
+set_option -top_module pll_double
+
+#-- set result format/file last
+project -result_file "pll_double.edn"
+
+#-- error message log file
+project -log_file pll_double.srf
+
+#-- run Synplify with 'arrange VHDL file'
+project -run

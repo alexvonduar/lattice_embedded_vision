@@ -1,0 +1,52 @@
+[Device]
+Family=ecp5um
+PartType=LFE5UM-85F
+PartName=LFE5UM-85F-8BG756I
+SpeedGrade=8
+Package=CABGA756
+OperatingCondition=IND
+Status=P
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=LPM
+CoreStatus=Demo
+CoreName=RAM_DP
+CoreRevision=6.5
+ModuleName=debayer_dpram
+SourceFormat=verilog
+ParameterFileVersion=1.0
+Date=07/06/2017
+Time=09:40:41
+
+[Parameters]
+Verilog=1
+VHDL=0
+EDIF=1
+Destination=Synplicity
+Expression=BusA(0 to 7)
+Order=Big Endian [MSB:LSB]
+IO=0
+RAddress=4096
+RData=12
+WAddress=4096
+WData=12
+enByte=0
+ByteSize=9
+OutputEn=1
+ClockEn=0
+Optimization=Speed
+Reset=Sync
+Reset1=Sync
+Init=0
+MemFile=
+MemFormat=bin
+EnECC=0
+Pipeline=0
+init_data=0
+
+[FilesGenerated]
+=mem
+
+[Command]
+cmd_line= -w -n debayer_dpram -lang verilog -synth synplify -bus_exp 7 -bb -arch sa5p00m -type ramdps -device LFE5UM-85F -raddr_width 12 -rwidth 12 -waddr_width 12 -wwidth 12 -rnum_words 4096 -wnum_words 4096 -outdata REGISTERED -cascade -1 -resetmode SYNC -sync_reset -mem_init0

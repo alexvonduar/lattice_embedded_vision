@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="DDR3_ECP5_demo" device="LFE5UM-85F-8BG756C" default_implementation="ddr3_ecp5_impl">
+    <Options/>
+    <Implementation title="ddr3_ecp5_impl" dir="ddr3_ecp5_impl" description="ddr3_ecp5_impl" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="ddr3_test_top" top="ddr3_test_top"/>
+        <Source name="src/data_gen_chk.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/ddr_ulogic.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/ddr3_sdram_mem_params_inst1.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/ddr3_test_params.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/ddr3_test_top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="ddr3_test_top"/>
+        </Source>
+        <Source name="src/led_15seg_drv.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/lfsr128.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="ddr3_ip_inst/ddr3_ip_inst.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="DDR3_ECP5_demo.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="DDR3_ECP5_demo1.sty"/>
+</BaliProject>
